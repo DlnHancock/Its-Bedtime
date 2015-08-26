@@ -20,6 +20,13 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
-	
+	UFUNCTION(BlueprintCallable, Category = :"Light Calculation")
+	bool GetLightingCondition();
+	//void HandleLightDetection();
+
+private:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ObjectInLight)
+	bool bIsInLight;
 	
 };
