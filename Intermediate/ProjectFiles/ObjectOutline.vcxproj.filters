@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\ObjectOutline.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{5E336CE8-054D-403B-A7F7-7D3957BB594A}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\ObjectOutline.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\ObjectOutlineEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{8936E486-BB65-4161-915C-F6BA092C04BF}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\TemplateDefs.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\ObjectOutline">
+			<UniqueIdentifier>{86BA58DB-C3CF-4665-926D-2F1DC22CAD8F}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\ObjectOutline\LightCalculation.cpp">
+			<Filter>Source\ObjectOutline</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ObjectOutline\LightCalculation.h">
+			<Filter>Source\ObjectOutline</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\ObjectOutline\ObjectOutline.Build.cs">
+			<Filter>Source\ObjectOutline</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\ObjectOutline\ObjectOutline.cpp">
+			<Filter>Source\ObjectOutline</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ObjectOutline\ObjectOutline.h">
+			<Filter>Source\ObjectOutline</Filter>
+		</ClInclude >
+		<Filter Include="Source\ObjectOutline\Resources">
+			<UniqueIdentifier>{49C2B9DF-8011-4F3F-8744-A188715E4D43}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\ObjectOutline\Resources\Windows">
+			<UniqueIdentifier>{381CCBC1-F6ED-4FD7-BBC4-5BBC2958BF7B}</UniqueIdentifier>
+		</Filter>
+		<ResourceCompile Include="..\..\Source\ObjectOutline\Resources\Windows\ObjectOutline.rc">
+			<Filter>Source\ObjectOutline\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>
