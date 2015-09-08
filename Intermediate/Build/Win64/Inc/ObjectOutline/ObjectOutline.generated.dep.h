@@ -5,9 +5,6 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#ifndef OBJECTOUTLINE_LightCalculation_generated_h
-	#include "LightCalculation.h"
-#endif
-#ifndef OBJECTOUTLINE_LightDetectionComponenet_generated_h
-	#include "LightDetectionComponenet.h"
+#ifndef OBJECTOUTLINE_LightDetection_generated_h
+	#include "LightDetection.h"
 #endif

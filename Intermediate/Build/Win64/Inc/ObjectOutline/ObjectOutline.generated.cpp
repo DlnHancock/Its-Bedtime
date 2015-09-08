@@ -8,168 +8,91 @@
 #include "ObjectOutline.h"
 #include "ObjectOutline.generated.dep.h"
 void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
-	void ULightCalculation::StaticRegisterNativesULightCalculation()
+	void ULightDetection::StaticRegisterNativesULightDetection()
 	{
-		FNativeFunctionRegistrar::RegisterFunction(ULightCalculation::StaticClass(),"GetLightingCondition",(Native)&ULightCalculation::execGetLightingCondition);
+		FNativeFunctionRegistrar::RegisterFunction(ULightDetection::StaticClass(),"GetLightingCondition",(Native)&ULightDetection::execGetLightingCondition);
 	}
-	IMPLEMENT_CLASS(ULightCalculation, 2511796598);
-	void ULightDetectionComponenet::StaticRegisterNativesULightDetectionComponenet()
-	{
-		FNativeFunctionRegistrar::RegisterFunction(ULightDetectionComponenet::StaticClass(),"GetLightingCondition",(Native)&ULightDetectionComponenet::execGetLightingCondition);
-	}
-	IMPLEMENT_CLASS(ULightDetectionComponenet, 1580658645);
+	IMPLEMENT_CLASS(ULightDetection, 3318813701);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_USceneComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 
-	OBJECTOUTLINE_API class UFunction* Z_Construct_UFunction_ULightCalculation_GetLightingCondition();
-	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightCalculation_NoRegister();
-	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightCalculation();
-	OBJECTOUTLINE_API class UFunction* Z_Construct_UFunction_ULightDetectionComponenet_GetLightingCondition();
-	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightDetectionComponenet_NoRegister();
-	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightDetectionComponenet();
+	OBJECTOUTLINE_API class UFunction* Z_Construct_UFunction_ULightDetection_GetLightingCondition();
+	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightDetection_NoRegister();
+	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightDetection();
 	OBJECTOUTLINE_API class UPackage* Z_Construct_UPackage_ObjectOutline();
-	UFunction* Z_Construct_UFunction_ULightCalculation_GetLightingCondition()
+	UFunction* Z_Construct_UFunction_ULightDetection_GetLightingCondition()
 	{
-		struct LightCalculation_eventGetLightingCondition_Parms
+		struct LightDetection_eventGetLightingCondition_Parms
 		{
 			UCapsuleComponent* capsule;
+			float totalLight;
 			bool ReturnValue;
 		};
-		UClass* OuterClass=Z_Construct_UClass_ULightCalculation();
+		UClass* OuterClass=Z_Construct_UClass_ULightDetection();
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GetLightingCondition"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x14020401, 65535, sizeof(LightCalculation_eventGetLightingCondition_Parms));
-			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, LightCalculation_eventGetLightingCondition_Parms, bool);
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, LightCalculation_eventGetLightingCondition_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, LightCalculation_eventGetLightingCondition_Parms), sizeof(bool), true);
-			UProperty* NewProp_capsule = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("capsule"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(capsule, LightCalculation_eventGetLightingCondition_Parms), 0x0000000000080080, Z_Construct_UClass_UCapsuleComponent_NoRegister());
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GetLightingCondition"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04420401, 65535, sizeof(LightDetection_eventGetLightingCondition_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, LightDetection_eventGetLightingCondition_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, LightDetection_eventGetLightingCondition_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, LightDetection_eventGetLightingCondition_Parms), sizeof(bool), true);
+			UProperty* NewProp_totalLight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("totalLight"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(totalLight, LightDetection_eventGetLightingCondition_Parms), 0x0000000000000180);
+			UProperty* NewProp_capsule = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("capsule"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(capsule, LightDetection_eventGetLightingCondition_Parms), 0x0000000000080080, Z_Construct_UClass_UCapsuleComponent_NoRegister());
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Light"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
-			MetaData->SetValue(NewProp_ReturnValue, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Lighting"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
+			MetaData->SetValue(NewProp_ReturnValue, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
+			MetaData->SetValue(NewProp_totalLight, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
 			MetaData->SetValue(NewProp_capsule, TEXT("EditInline"), TEXT("true"));
-			MetaData->SetValue(NewProp_capsule, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
+			MetaData->SetValue(NewProp_capsule, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
 #endif
 		}
 		return ReturnFunction;
 	}
-	UClass* Z_Construct_UClass_ULightCalculation_NoRegister()
+	UClass* Z_Construct_UClass_ULightDetection_NoRegister()
 	{
-		return ULightCalculation::StaticClass();
+		return ULightDetection::StaticClass();
 	}
-	UClass* Z_Construct_UClass_ULightCalculation()
+	UClass* Z_Construct_UClass_ULightDetection()
 	{
 		static UClass* OuterClass = NULL;
 		if (!OuterClass)
 		{
-			Z_Construct_UClass_USceneComponent();
+			Z_Construct_UClass_UActorComponent();
 			Z_Construct_UPackage_ObjectOutline();
-			OuterClass = ULightCalculation::StaticClass();
+			OuterClass = ULightDetection::StaticClass();
 			if (!(OuterClass->ClassFlags & CLASS_Constructed))
 			{
 				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20B00080;
+				OuterClass->ClassFlags |= 0x20300080;
 
-				OuterClass->LinkChild(Z_Construct_UFunction_ULightCalculation_GetLightingCondition());
+				OuterClass->LinkChild(Z_Construct_UFunction_ULightDetection_GetLightingCondition());
 
-				UProperty* NewProp_mTotalLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mTotalLight"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mTotalLight, ULightCalculation), 0x0000000000000005);
-				UProperty* NewProp_mLightsFound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mLightsFound"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(mLightsFound, ULightCalculation), 0x0000000000000005);
-				UProperty* NewProp_mAverageLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mAverageLight"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mAverageLight, ULightCalculation), 0x0000000000000005);
-				CPP_BOOL_PROPERTY_BITMASK_STRUCT(mIsInLight, ULightCalculation, bool);
-				UProperty* NewProp_mIsInLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mIsInLight"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(mIsInLight, ULightCalculation), 0x0000000000000005, CPP_BOOL_PROPERTY_BITMASK(mIsInLight, ULightCalculation), sizeof(bool), true);
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ULightCalculation_GetLightingCondition()); // 3868762325
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsInLight, ULightDetection, bool);
+				UProperty* NewProp_bIsInLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInLight"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInLight, ULightDetection), 0x0000000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsInLight, ULightDetection), sizeof(bool), true);
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ULightDetection_GetLightingCondition()); // 857351076
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
 				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
-				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("ComponentReplication Trigger PhysicsVolume"));
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("LightCalculation.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
-				MetaData->SetValue(NewProp_mTotalLight, TEXT("Category"), TEXT("Light"));
-				MetaData->SetValue(NewProp_mTotalLight, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
-				MetaData->SetValue(NewProp_mLightsFound, TEXT("Category"), TEXT("Light"));
-				MetaData->SetValue(NewProp_mLightsFound, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
-				MetaData->SetValue(NewProp_mAverageLight, TEXT("Category"), TEXT("Light"));
-				MetaData->SetValue(NewProp_mAverageLight, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
-				MetaData->SetValue(NewProp_mIsInLight, TEXT("Category"), TEXT("Light"));
-				MetaData->SetValue(NewProp_mIsInLight, TEXT("ModuleRelativePath"), TEXT("LightCalculation.h"));
-				MetaData->SetValue(NewProp_mIsInLight, TEXT("ToolTip"), TEXT("void HandleLightDetection();"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("ComponentReplication"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("LightDetection.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
+				MetaData->SetValue(NewProp_bIsInLight, TEXT("Category"), TEXT("ObjectInLight"));
+				MetaData->SetValue(NewProp_bIsInLight, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
+				MetaData->SetValue(NewProp_bIsInLight, TEXT("ToolTip"), TEXT("void HandleLightDetection();"));
 #endif
 			}
 		}
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ULightCalculation(Z_Construct_UClass_ULightCalculation, TEXT("ULightCalculation"));
-	UFunction* Z_Construct_UFunction_ULightDetectionComponenet_GetLightingCondition()
-	{
-		struct LightDetectionComponenet_eventGetLightingCondition_Parms
-		{
-			UCapsuleComponent* capsule;
-			bool ReturnValue;
-		};
-		UClass* OuterClass=Z_Construct_UClass_ULightDetectionComponenet();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GetLightingCondition"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x14020401, 65535, sizeof(LightDetectionComponenet_eventGetLightingCondition_Parms));
-			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, LightDetectionComponenet_eventGetLightingCondition_Parms, bool);
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, LightDetectionComponenet_eventGetLightingCondition_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, LightDetectionComponenet_eventGetLightingCondition_Parms), sizeof(bool), true);
-			UProperty* NewProp_capsule = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("capsule"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(capsule, LightDetectionComponenet_eventGetLightingCondition_Parms), 0x0000000000080080, Z_Construct_UClass_UCapsuleComponent_NoRegister());
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Light"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("LightDetectionComponenet.h"));
-			MetaData->SetValue(NewProp_ReturnValue, TEXT("ModuleRelativePath"), TEXT("LightDetectionComponenet.h"));
-			MetaData->SetValue(NewProp_capsule, TEXT("EditInline"), TEXT("true"));
-			MetaData->SetValue(NewProp_capsule, TEXT("ModuleRelativePath"), TEXT("LightDetectionComponenet.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UClass* Z_Construct_UClass_ULightDetectionComponenet_NoRegister()
-	{
-		return ULightDetectionComponenet::StaticClass();
-	}
-	UClass* Z_Construct_UClass_ULightDetectionComponenet()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_USceneComponent();
-			Z_Construct_UPackage_ObjectOutline();
-			OuterClass = ULightDetectionComponenet::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20B00080;
-
-				OuterClass->LinkChild(Z_Construct_UFunction_ULightDetectionComponenet_GetLightingCondition());
-
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ULightDetectionComponenet_GetLightingCondition()); // 199223657
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
-				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
-				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("ComponentReplication Trigger PhysicsVolume"));
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("LightDetectionComponenet.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("LightDetectionComponenet.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ULightDetectionComponenet(Z_Construct_UClass_ULightDetectionComponenet, TEXT("ULightDetectionComponenet"));
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ULightDetection(Z_Construct_UClass_ULightDetection, TEXT("ULightDetection"));
 	UPackage* Z_Construct_UPackage_ObjectOutline()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -178,8 +101,8 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ObjectOutline")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x1E13A7D2;
-			Guid.B = 0x72713940;
+			Guid.A = 0x724DE633;
+			Guid.B = 0x2C6E79C6;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
