@@ -58,8 +58,29 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 			continue;
 		if (!Itr->AffectsPrimitive(capsule))
 			continue;
+
+
+		///TraceLine for visiblility towards owner of component
+		FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, Itr->GetOwner());
+		RV_TraceParams.bTraceComplex = true;
+		RV_TraceParams.bTraceAsyncScene = true;
+		RV_TraceParams.bReturnPhysicalMaterial = false;
+		
+		//Re-initialize hit info
+		FHitResult RV_Hit(ForceInit);
+
+		//call GetWorld() from within an actor extending class
+		GetWorld()->LineTraceSingle(
+			RV_Hit,        //result
+			Itr->GetComponentLocation(),    //start
+			GetOwner()->GetActorLocation(), //end
+			ECC_Visibility, //collision channel
+			RV_TraceParams
+			);
+
+
 		// If a line trace test from the light's position to the character's position does not hit any actor
-		if (GetWorld()->LineTraceTest(Itr->GetComponentLocation(), GetOwner()->GetActorLocation(), ECC_Visibility, FCollisionQueryParams(NAME_None, true, Itr->GetOwner())))
+		if (RV_Hit.bBlockingHit)
 			continue;
 
 		lightsFound += 1;
