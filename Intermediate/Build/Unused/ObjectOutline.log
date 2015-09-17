@@ -1,4 +1,4 @@
-﻿Build started 9/12/2015 12:01:35 AM.
+﻿Build started 9/17/2015 4:09:03 AM.
      1>Project "H:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" on node 2 (Build target(s)).
      1>Build:
          "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" ObjectOutlineEditor Win64 Development "H:\Projects\It's Bedtime\trunk\ObjectOutline.uproject" -rocket
@@ -7,4 +7,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.25
+Time Elapsed 00:00:01.82

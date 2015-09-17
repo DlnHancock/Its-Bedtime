@@ -58,70 +58,51 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 			continue;
 		if (!Itr->AffectsPrimitive(capsule))
 			continue;
-
-
-		///TraceLine for visiblility towards owner of component
-		FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, Itr->GetOwner());
-		RV_TraceParams.bTraceComplex = true;
-		RV_TraceParams.bTraceAsyncScene = true;
-		RV_TraceParams.bReturnPhysicalMaterial = false;
-		
-		//Re-initialize hit info
-		FHitResult RV_Hit(ForceInit);
-
-		//call GetWorld() from within an actor extending class
-		GetWorld()->LineTraceSingle(
-			RV_Hit,        //result
-			Itr->GetComponentLocation(),    //start
-			GetOwner()->GetActorLocation(), //end
-			ECC_Visibility, //collision channel
-			RV_TraceParams
-			);
-
-
 		// If a line trace test from the light's position to the character's position does not hit any actor
-		if (RV_Hit.bBlockingHit)
+		FVector lightLocation = Itr->GetComponentLocation();
+		FVector charLocation = GetOwner()->GetActorLocation();
+		if (GetWorld()->LineTraceTest(lightLocation, charLocation, ECC_Visibility, FCollisionQueryParams(NAME_None, true, Itr->GetOwner())))
 			continue;
 
 		lightsFound += 1;
 
 		switch (Itr->GetLightType())
 		{
-			case ELightComponentType::LightType_Directional:
-			{
-				UDirectionalLightComponent* directionalLight = Cast<UDirectionalLightComponent>(*Itr);
+		case ELightComponentType::LightType_Directional:
+		{
+			UDirectionalLightComponent* directionalLight = Cast<UDirectionalLightComponent>(*Itr);
 
-				averageLight += directionalLight->Intensity ;
+			averageLight += directionalLight->Intensity;
 
-				break;
-			}
+			break;
+		}
 
-			case ELightComponentType::LightType_Point:
-			{
-				UPointLightComponent* pointLight = Cast<UPointLightComponent>(*Itr);
+		case ELightComponentType::LightType_Point:
+		{
+			UPointLightComponent* pointLight = Cast<UPointLightComponent>(*Itr);
 
-				float wattage = pointLight->Intensity ;
-				float distance = FVector::Dist(GetOwner()->GetActorLocation(), Itr->GetComponentLocation()) / 100;
-				float surfaceArea = 4 * PI * FMath::Square(distance);
-				float light = wattage / surfaceArea;
+			float wattage = pointLight->Intensity;
+			float distance = FVector::Dist(GetOwner()->GetActorLocation(), Itr->GetComponentLocation()) / 100;
+			float surfaceArea = 4 * PI * FMath::Square(distance);
+			float light = wattage / surfaceArea;
 
-				averageLight += light;
+			averageLight += light;
 
-				break;
-			}
+			break;
+		}
 
-			case ELightComponentType::LightType_Spot:
-			{
-				USpotLightComponent* spotLight = Cast<USpotLightComponent>(*Itr);
+		case ELightComponentType::LightType_Spot:
+		{
+			USpotLightComponent* spotLight = Cast<USpotLightComponent>(*Itr);
 
-				float wattage = spotLight->Intensity;
-				float distance = FVector::Dist(GetOwner()->GetActorLocation(), Itr->GetComponentLocation()) / 1000;
-				float slantLength = FMath::Sqrt(FMath::Square(spotLight->AttenuationRadius) + FMath::Square(spotLight->AttenuationRadius));
-				float surfaceArea = (PI * FMath::Square(distance)) + (PI * distance * slantLength);
-				float light = wattage / surfaceArea;
-				averageLight += light;
-				break;
-			}
+			float wattage = spotLight->Intensity;
+			float distance = FVector::Dist(GetOwner()->GetActorLocation(), Itr->GetComponentLocation()) / 1000;
+			float slantLength = FMath::Sqrt(FMath::Square(spotLight->AttenuationRadius) + FMath::Square(spotLight->AttenuationRadius));
+			float surfaceArea = (PI * FMath::Square(distance)) + (PI * distance * slantLength);
+			float light = wattage / surfaceArea;
+			averageLight += light;
+			break;
+		}
 		}
 		// Draw a Debug Line to show how the light is hitting the character
 		DrawDebugLine(GetWorld(), Itr->GetComponentLocation(), GetOwner()->GetActorLocation(), FColor::Yellow);
