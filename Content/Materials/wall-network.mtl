@@ -1,0 +1,88 @@
+newmtl blinn1SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.79 0.79 0.79
+newmtl blinn2SG
+illum 4
+Kd 0.18 0.18 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl blinn4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.17 0.17 0.17
+Tf 1.00 1.00 1.00
+map_Kd night_stand_diffuse.jpg
+bump night_stand_bmp.jpg -bm 0.07
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks night_stand_spec.jpg
+newmtl blinn5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hardwood_diffuse.jpg
+bump hardwood_nm.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks hardwood_spec.jpg
+newmtl initialShadingGroup
+illum 4
+Kd 0.22 0.22 0.22
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd UV_mapper.jpg
+Ni 1.00
+newmtl lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd dresser_diffuse.jpg
+bump dresser_bmp.jpg -bm 0.025
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks dresser_spec.jpg
+newmtl lambert5SG
+illum 4
+Kd 0.58 0.58 0.58
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.81 0.81 0.81
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd basketball_diffuse.jpg
+bump BasketBall_NM_02.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks BasketBall_spec.jpg
+newmtl phong2SG
+illum 4
+Kd 0.61 0.61 0.61
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
