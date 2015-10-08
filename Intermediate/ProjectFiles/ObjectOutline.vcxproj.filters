@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\ObjectOutline.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{0604D40D-D736-4817-83FB-B2A92676BBD7}</UniqueIdentifier>
+			<UniqueIdentifier>{190D80ED-D914-4A1A-A4D3-9226B29EAC7B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\ObjectOutline.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{F59CB345-5A69-4658-981C-ED9848678CDB}</UniqueIdentifier>
+			<UniqueIdentifier>{24F2226C-8400-40AB-9D4E-32A94368BAB6}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\ObjectOutline">
-			<UniqueIdentifier>{FFCCEE8D-E6C3-4FF4-B213-930C91F7C030}</UniqueIdentifier>
+			<UniqueIdentifier>{8CF47CB8-DE98-41BA-86CF-4AE4A6D0C479}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\ObjectOutline\LightDetection.cpp">
 			<Filter>Source\ObjectOutline</Filter>
@@ -48,11 +48,17 @@
 		<ClInclude Include="..\..\Source\ObjectOutline\ObjectOutline.h">
 			<Filter>Source\ObjectOutline</Filter>
 		</ClInclude >
+		<ClCompile Include="..\..\Source\ObjectOutline\PossesableObject.cpp">
+			<Filter>Source\ObjectOutline</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ObjectOutline\PossesableObject.h">
+			<Filter>Source\ObjectOutline</Filter>
+		</ClInclude >
 		<Filter Include="Source\ObjectOutline\Resources">
-			<UniqueIdentifier>{B746C4B5-C434-4F39-AEB6-EA9A7B286628}</UniqueIdentifier>
+			<UniqueIdentifier>{52B8AAA3-396D-41BC-8214-DB057DDA365C}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\ObjectOutline\Resources\Windows">
-			<UniqueIdentifier>{1EBA18BD-75F2-4FA2-B410-A54D127DB698}</UniqueIdentifier>
+			<UniqueIdentifier>{2EC69941-F9E7-4512-B114-8303C050F35B}</UniqueIdentifier>
 		</Filter>
 		<ResourceCompile Include="..\..\Source\ObjectOutline\Resources\Windows\ObjectOutline.rc">
 			<Filter>Source\ObjectOutline\Resources\Windows</Filter>

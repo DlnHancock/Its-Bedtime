@@ -13,6 +13,10 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 		FNativeFunctionRegistrar::RegisterFunction(ULightDetection::StaticClass(),"GetLightingCondition",(Native)&ULightDetection::execGetLightingCondition);
 	}
 	IMPLEMENT_CLASS(ULightDetection, 3318813701);
+	void UPossesableObject::StaticRegisterNativesUPossesableObject()
+	{
+	}
+	IMPLEMENT_CLASS(UPossesableObject, 3969872444);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
@@ -21,6 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 	OBJECTOUTLINE_API class UFunction* Z_Construct_UFunction_ULightDetection_GetLightingCondition();
 	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightDetection_NoRegister();
 	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightDetection();
+	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_UPossesableObject_NoRegister();
+	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_UPossesableObject();
 	OBJECTOUTLINE_API class UPackage* Z_Construct_UPackage_ObjectOutline();
 	UFunction* Z_Construct_UFunction_ULightDetection_GetLightingCondition()
 	{
@@ -93,6 +99,78 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ULightDetection(Z_Construct_UClass_ULightDetection, TEXT("ULightDetection"));
+	UClass* Z_Construct_UClass_UPossesableObject_NoRegister()
+	{
+		return UPossesableObject::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UPossesableObject()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage_ObjectOutline();
+			OuterClass = UPossesableObject::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20300080;
+
+
+				UProperty* NewProp_mActions = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mActions"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(mActions, UPossesableObject), 0x0000000000000005);
+				UProperty* NewProp_mActions_Inner = new(EC_InternalUseOnlyConstructor, NewProp_mActions, TEXT("mActions"), RF_Public|RF_Transient|RF_Native) UStrProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(mLevitatable, UPossesableObject, bool);
+				UProperty* NewProp_mLevitatable = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mLevitatable"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(mLevitatable, UPossesableObject), 0x0000000000000005, CPP_BOOL_PROPERTY_BITMASK(mLevitatable, UPossesableObject), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(mMovable, UPossesableObject, bool);
+				UProperty* NewProp_mMovable = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mMovable"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(mMovable, UPossesableObject), 0x0000000000000005, CPP_BOOL_PROPERTY_BITMASK(mMovable, UPossesableObject), sizeof(bool), true);
+				UProperty* NewProp_mLevitationSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mLevitationSpeed"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mLevitationSpeed, UPossesableObject), 0x0000000000000005);
+				UProperty* NewProp_mTKSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mTKSpeed"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mTKSpeed, UPossesableObject), 0x0000000000000005);
+				UProperty* NewProp_mFearCoeficient = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mFearCoeficient"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mFearCoeficient, UPossesableObject), 0x0000000000000005);
+				UProperty* NewProp_mMaliceLevitateCost = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mMaliceLevitateCost"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mMaliceLevitateCost, UPossesableObject), 0x0000000000000005);
+				UProperty* NewProp_mMaliceMoveCost = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mMaliceMoveCost"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mMaliceMoveCost, UPossesableObject), 0x0000000000000005);
+				UProperty* NewProp_mWeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mWeight"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(mWeight, UPossesableObject), 0x0000000000000005);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("ComponentReplication"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mActions, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mActions, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mActions, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mLevitatable, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mLevitatable, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mLevitatable, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mMovable, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mMovable, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mMovable, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mLevitationSpeed, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mLevitationSpeed, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mLevitationSpeed, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mTKSpeed, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mTKSpeed, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mTKSpeed, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mFearCoeficient, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mFearCoeficient, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mFearCoeficient, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mMaliceLevitateCost, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mMaliceLevitateCost, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mMaliceLevitateCost, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mMaliceMoveCost, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mMaliceMoveCost, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mMaliceMoveCost, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mWeight, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mWeight, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mWeight, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UPossesableObject(Z_Construct_UClass_UPossesableObject, TEXT("UPossesableObject"));
 	UPackage* Z_Construct_UPackage_ObjectOutline()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -101,8 +179,8 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ObjectOutline")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x724DE633;
-			Guid.B = 0x2C6E79C6;
+			Guid.A = 0x634C2E93;
+			Guid.B = 0x0321912C;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

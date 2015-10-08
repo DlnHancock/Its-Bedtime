@@ -57,6 +57,8 @@
 		<None Include="..\..\Source\ObjectOutline\ObjectOutline.Build.cs" />
 		<ClCompile Include="..\..\Source\ObjectOutline\ObjectOutline.cpp" />
 		<ClInclude Include="..\..\Source\ObjectOutline\ObjectOutline.h" />
+		<ClCompile Include="..\..\Source\ObjectOutline\PossesableObject.cpp" />
+		<ClInclude Include="..\..\Source\ObjectOutline\PossesableObject.h" />
 		<ResourceCompile Include="..\..\Source\ObjectOutline\Resources\Windows\ObjectOutline.rc" />
 	</ItemGroup>
 	<PropertyGroup Label="Globals">

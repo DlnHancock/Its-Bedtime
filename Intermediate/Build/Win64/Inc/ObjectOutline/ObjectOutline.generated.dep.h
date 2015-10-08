@@ -8,3 +8,6 @@
 #ifndef OBJECTOUTLINE_LightDetection_generated_h
 	#include "LightDetection.h"
 #endif
+#ifndef OBJECTOUTLINE_PossesableObject_generated_h
+	#include "PossesableObject.h"
+#endif

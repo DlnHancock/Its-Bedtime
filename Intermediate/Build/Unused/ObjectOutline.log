@@ -1,10 +1,10 @@
-﻿Build started 9/17/2015 4:09:03 AM.
-     1>Project "H:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/8/2015 12:00:34 PM.
+     1>Project "E:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" ObjectOutlineEditor Win64 Development "H:\Projects\It's Bedtime\trunk\ObjectOutline.uproject" -rocket
+         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" ObjectOutlineEditor Win64 Development "E:\Projects\It's Bedtime\trunk\ObjectOutline.uproject" -rocket
          Target is up to date.
-     1>Done Building Project "H:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" (Build target(s)).
+     1>Done Building Project "E:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.82
+Time Elapsed 00:00:03.56
