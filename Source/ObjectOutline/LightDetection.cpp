@@ -59,10 +59,8 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 		if (!Itr->AffectsPrimitive(capsule))
 			continue;
 		// If a line trace test from the light's position to the character's position does not hit any actor
-		FVector lightLocation = Itr->GetComponentLocation();
-		FVector charLocation = GetOwner()->GetActorLocation();
-		if (GetWorld()->LineTraceTest(lightLocation, charLocation, ECC_Visibility, FCollisionQueryParams(NAME_None, true, Itr->GetOwner())))
-			continue;
+		//if (GetWorld()->LineTraceTest(Itr->GetComponentLocation(), GetOwner()->GetActorLocation(), ECC_Visibility, FCollisionQueryParams(NAME_None, true, Itr->GetOwner())))
+			//continue;
 
 		lightsFound += 1;
 

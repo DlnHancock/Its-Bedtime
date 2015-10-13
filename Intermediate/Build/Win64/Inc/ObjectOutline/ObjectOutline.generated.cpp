@@ -16,11 +16,12 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 	void UPossesableObject::StaticRegisterNativesUPossesableObject()
 	{
 	}
-	IMPLEMENT_CLASS(UPossesableObject, 3969872444);
+	IMPLEMENT_CLASS(UPossesableObject, 1732772912);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_UObject_FLinearColor();
 
 	OBJECTOUTLINE_API class UFunction* Z_Construct_UFunction_ULightDetection_GetLightingCondition();
 	OBJECTOUTLINE_API class UClass* Z_Construct_UClass_ULightDetection_NoRegister();
@@ -119,6 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 
 				UProperty* NewProp_mActions = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mActions"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(mActions, UPossesableObject), 0x0000000000000005);
 				UProperty* NewProp_mActions_Inner = new(EC_InternalUseOnlyConstructor, NewProp_mActions, TEXT("mActions"), RF_Public|RF_Transient|RF_Native) UStrProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+				UProperty* NewProp_mColor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mColor"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(mColor, UPossesableObject), 0x0000000000000005, Z_Construct_UScriptStruct_UObject_FLinearColor());
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(mLevitatable, UPossesableObject, bool);
 				UProperty* NewProp_mLevitatable = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mLevitatable"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(mLevitatable, UPossesableObject), 0x0000000000000005, CPP_BOOL_PROPERTY_BITMASK(mLevitatable, UPossesableObject), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(mMovable, UPossesableObject, bool);
@@ -140,6 +142,9 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 				MetaData->SetValue(NewProp_mActions, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_mActions, TEXT("Category"), TEXT("ItemPossession"));
 				MetaData->SetValue(NewProp_mActions, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
+				MetaData->SetValue(NewProp_mColor, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_mColor, TEXT("Category"), TEXT("ItemPossession"));
+				MetaData->SetValue(NewProp_mColor, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
 				MetaData->SetValue(NewProp_mLevitatable, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_mLevitatable, TEXT("Category"), TEXT("ItemPossession"));
 				MetaData->SetValue(NewProp_mLevitatable, TEXT("ModuleRelativePath"), TEXT("PossesableObject.h"));
@@ -179,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ObjectOutline")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x634C2E93;
+			Guid.A = 0x0715372E;
 			Guid.B = 0x0321912C;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

@@ -40,7 +40,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
 	bool mMovable;							
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	bool mLevitatable;						   
+	bool mLevitatable;	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = ItemPossession)
+	FLinearColor mColor;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
 	TArray<FString> mActions;
 	

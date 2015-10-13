@@ -5,6 +5,7 @@
 #include "Components/ActorComponent.h"
 #include "LightDetection.generated.h"
 
+
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class OBJECTOUTLINE_API ULightDetection : public UActorComponent
 {
