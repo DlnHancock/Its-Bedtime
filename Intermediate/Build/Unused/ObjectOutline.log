@@ -1,16 +1,16 @@
-﻿Build started 10/12/2015 11:07:03 PM.
-     1>Project "D:\Projects\Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/15/2015 11:55:52 AM.
+     1>Project "E:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" ObjectOutlineEditor Win64 Development "D:\Projects\Bedtime\trunk\ObjectOutline.uproject" -rocket
+         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" ObjectOutlineEditor Win64 Development "E:\Projects\It's Bedtime\trunk\ObjectOutline.uproject" -rocket
          Performing 2 actions (4 in parallel)
          LightDetection.cpp
          [2/2] Link UE4Editor-ObjectOutline.dll
-            Creating library D:\Projects\Bedtime\trunk\Intermediate\Build\Win64\ObjectOutlineEditor\Development\UE4Editor-ObjectOutline.lib and object D:\Projects\Bedtime\trunk\Intermediate\Build\Win64\ObjectOutlineEditor\Development\UE4Editor-ObjectOutline.exp
+            Creating library E:\Projects\It's Bedtime\trunk\Intermediate\Build\Win64\ObjectOutlineEditor\Development\UE4Editor-ObjectOutline.lib and object E:\Projects\It's Bedtime\trunk\Intermediate\Build\Win64\ObjectOutlineEditor\Development\UE4Editor-ObjectOutline.exp
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (4 processors): 0.00 building projects, 0.29 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.59 linking, 0.00 other
-         UBT execution time: 4.15 seconds
-     1>Done Building Project "D:\Projects\Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" (Build target(s)).
+         Cumulative action seconds (8 processors): 0.00 building projects, 0.37 compiling, 0.00 creating app bundles, 0.00 generating debug info, 1.05 linking, 0.00 other
+         UBT execution time: 5.05 seconds
+     1>Done Building Project "E:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.29
+Time Elapsed 00:00:05.23

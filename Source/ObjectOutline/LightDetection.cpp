@@ -48,10 +48,16 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 	// Loop through all lights,
 	for (TObjectIterator<ULightComponent> Itr; Itr; ++Itr)
 	{
-		if (!IsValid(Itr->GetOwner()))
+		AActor* tempLightOwner = Itr->GetOwner();
+		AActor* owner = GetOwner();
+		FVector ownerPos =  owner->GetActorLocation();
+		FVector lightPos = Itr->GetComponentLocation();
+		if(owner == nullptr)
+			continue;
+		if (!IsValid(tempLightOwner))
 			continue;
 		// If this light is not a default object,
-		if (Itr->GetOwner()->HasAnyFlags(RF_ClassDefaultObject))
+		if (tempLightOwner->HasAnyFlags(RF_ClassDefaultObject))
 			continue;
 		// If this light is enabled (or visible),
 		if (!Itr->IsVisible())
@@ -59,7 +65,7 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 		if (!Itr->AffectsPrimitive(capsule))
 			continue;
 		// If a line trace test from the light's position to the character's position does not hit any actor
-		//if (GetWorld()->LineTraceTest(Itr->GetComponentLocation(), GetOwner()->GetActorLocation(), ECC_Visibility, FCollisionQueryParams(NAME_None, true, Itr->GetOwner())))
+		//if (GetWorld()->LineTraceTest(lightPos, ownerPos, ECC_Visibility, FCollisionQueryParams(NAME_None, true, tempLightOwner)))
 			//continue;
 
 		lightsFound += 1;
@@ -80,7 +86,7 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 			UPointLightComponent* pointLight = Cast<UPointLightComponent>(*Itr);
 
 			float wattage = pointLight->Intensity;
-			float distance = FVector::Dist(GetOwner()->GetActorLocation(), Itr->GetComponentLocation()) / 100;
+			float distance = FVector::Dist(ownerPos, lightPos) / 100;
 			float surfaceArea = 4 * PI * FMath::Square(distance);
 			float light = wattage / surfaceArea;
 
@@ -94,7 +100,7 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 			USpotLightComponent* spotLight = Cast<USpotLightComponent>(*Itr);
 
 			float wattage = spotLight->Intensity;
-			float distance = FVector::Dist(GetOwner()->GetActorLocation(), Itr->GetComponentLocation()) / 1000;
+			float distance = FVector::Dist(ownerPos, lightPos) / 1000;
 			float slantLength = FMath::Sqrt(FMath::Square(spotLight->AttenuationRadius) + FMath::Square(spotLight->AttenuationRadius));
 			float surfaceArea = (PI * FMath::Square(distance)) + (PI * distance * slantLength);
 			float light = wattage / surfaceArea;
@@ -103,7 +109,7 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 		}
 		}
 		// Draw a Debug Line to show how the light is hitting the character
-		DrawDebugLine(GetWorld(), Itr->GetComponentLocation(), GetOwner()->GetActorLocation(), FColor::Yellow);
+		DrawDebugLine(GetWorld(), lightPos, ownerPos, FColor::Yellow);
 		bLit = true;
 	}
 
