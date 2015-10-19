@@ -353,6 +353,6 @@ C:\Program Files\Epic Games\4.7\Engine\Plugins\ScriptGeneratorPlugin\Source\Scri
 C:\Program Files\Epic Games\4.7\Engine\Plugins\ScriptPlugin\Source\ScriptEditorPlugin\ScriptEditorPlugin.Build.cs
 C:\Program Files\Epic Games\4.7\Engine\Plugins\ScriptPlugin\Source\ScriptPlugin\ScriptPlugin.Build.cs
 C:\Program Files\Epic Games\4.7\Engine\Plugins\Slate\SlateRemote\Source\SlateRemote\SlateRemote.Build.cs
-E:\Projects\It's Bedtime\trunk\Source\ObjectOutline\ObjectOutline.Build.cs
-E:\Projects\It's Bedtime\trunk\Source\ObjectOutline.Target.cs
-E:\Projects\It's Bedtime\trunk\Source\ObjectOutlineEditor.Target.cs
+D:\Projects\It's Bedtime\trunk\Source\ObjectOutline\ObjectOutline.Build.cs
+D:\Projects\It's Bedtime\trunk\Source\ObjectOutline.Target.cs
+D:\Projects\It's Bedtime\trunk\Source\ObjectOutlineEditor.Target.cs
