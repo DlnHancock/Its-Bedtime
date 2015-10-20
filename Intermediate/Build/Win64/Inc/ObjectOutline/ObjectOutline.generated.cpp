@@ -12,7 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ULightDetection::StaticClass(),"GetLightingCondition",(Native)&ULightDetection::execGetLightingCondition);
 	}
-	IMPLEMENT_CLASS(ULightDetection, 3318813701);
+	IMPLEMENT_CLASS(ULightDetection, 682381658);
 	void UPossesableObject::StaticRegisterNativesUPossesableObject()
 	{
 	}
@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_UObject_FLinearColor();
 
@@ -33,6 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 	{
 		struct LightDetection_eventGetLightingCondition_Parms
 		{
+			AActor* owner;
 			UCapsuleComponent* capsule;
 			float totalLight;
 			bool ReturnValue;
@@ -46,6 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, LightDetection_eventGetLightingCondition_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, LightDetection_eventGetLightingCondition_Parms), sizeof(bool), true);
 			UProperty* NewProp_totalLight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("totalLight"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(totalLight, LightDetection_eventGetLightingCondition_Parms), 0x0000000000000180);
 			UProperty* NewProp_capsule = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("capsule"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(capsule, LightDetection_eventGetLightingCondition_Parms), 0x0000000000080080, Z_Construct_UClass_UCapsuleComponent_NoRegister());
+			UProperty* NewProp_owner = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("owner"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(owner, LightDetection_eventGetLightingCondition_Parms), 0x0000000000000080, Z_Construct_UClass_AActor_NoRegister());
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -56,6 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 			MetaData->SetValue(NewProp_totalLight, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
 			MetaData->SetValue(NewProp_capsule, TEXT("EditInline"), TEXT("true"));
 			MetaData->SetValue(NewProp_capsule, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
+			MetaData->SetValue(NewProp_owner, TEXT("ModuleRelativePath"), TEXT("LightDetection.h"));
 #endif
 		}
 		return ReturnFunction;
@@ -81,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsInLight, ULightDetection, bool);
 				UProperty* NewProp_bIsInLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInLight"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInLight, ULightDetection), 0x0000000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsInLight, ULightDetection), sizeof(bool), true);
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ULightDetection_GetLightingCondition()); // 857351076
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ULightDetection_GetLightingCondition()); // 1302391994
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -184,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectOutline() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ObjectOutline")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x0715372E;
+			Guid.A = 0x4E2B05D0;
 			Guid.B = 0x0321912C;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

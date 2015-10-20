@@ -37,7 +37,7 @@ void ULightDetection::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 
 
-bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & totalLight)
+bool ULightDetection::GetLightingCondition(AActor * owner, UCapsuleComponent * capsule, float & totalLight)
 {
 	// Define a variable for the final result to be stored in,
 	bool bLit = false;
@@ -49,7 +49,6 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 	for (TObjectIterator<ULightComponent> Itr; Itr; ++Itr)
 	{
 		AActor* tempLightOwner = Itr->GetOwner();
-		AActor* owner = GetOwner();
 		FVector ownerPos =  owner->GetActorLocation();
 		FVector lightPos = Itr->GetComponentLocation();
 		if(owner == nullptr)
@@ -65,8 +64,8 @@ bool ULightDetection::GetLightingCondition(UCapsuleComponent * capsule, float & 
 		if (!Itr->AffectsPrimitive(capsule))
 			continue;
 		// If a line trace test from the light's position to the character's position does not hit any actor
-		//if (GetWorld()->LineTraceTest(lightPos, ownerPos, ECC_Visibility, FCollisionQueryParams(NAME_None, true, tempLightOwner)))
-			//continue;
+		if (GetWorld()->LineTraceTest(lightPos, ownerPos, ECC_Visibility, FCollisionQueryParams(NAME_None, true, owner)))
+			continue;
 
 		lightsFound += 1;
 

@@ -23,7 +23,7 @@ public:
 
 
 	UFUNCTION(BlueprintCallable, Category = Lighting)
-		bool GetLightingCondition(UCapsuleComponent* capsule, float & totalLight);
+		bool GetLightingCondition(AActor * owner, UCapsuleComponent* capsule, float & totalLight);
 	//void HandleLightDetection();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ObjectInLight)
