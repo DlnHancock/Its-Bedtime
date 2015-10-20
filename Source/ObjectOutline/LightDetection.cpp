@@ -39,6 +39,8 @@ void ULightDetection::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 bool ULightDetection::GetLightingCondition(AActor * owner, UCapsuleComponent * capsule, float & totalLight)
 {
+	if(!IsValid(owner) || !IsValid(capsule))
+		return false;
 	// Define a variable for the final result to be stored in,
 	bool bLit = false;
 
@@ -49,10 +51,13 @@ bool ULightDetection::GetLightingCondition(AActor * owner, UCapsuleComponent * c
 	for (TObjectIterator<ULightComponent> Itr; Itr; ++Itr)
 	{
 		AActor* tempLightOwner = Itr->GetOwner();
+		if(!IsValid(tempLightOwner))
+			continue;
+
+		
 		FVector ownerPos =  owner->GetActorLocation();
 		FVector lightPos = Itr->GetComponentLocation();
-		if(owner == nullptr)
-			continue;
+		
 		if (!IsValid(tempLightOwner))
 			continue;
 		// If this light is not a default object,

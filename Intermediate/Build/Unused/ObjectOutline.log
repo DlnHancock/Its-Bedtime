@@ -1,4 +1,4 @@
-﻿Build started 10/20/2015 11:08:01 AM.
+﻿Build started 10/20/2015 12:11:31 PM.
      1>Project "E:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" on node 2 (Build target(s)).
      1>Build:
          "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" ObjectOutlineEditor Win64 Development "E:\Projects\It's Bedtime\trunk\ObjectOutline.uproject" -rocket
@@ -7,10 +7,10 @@
          [2/2] Link UE4Editor-ObjectOutline.dll
             Creating library E:\Projects\It's Bedtime\trunk\Intermediate\Build\Win64\ObjectOutlineEditor\Development\UE4Editor-ObjectOutline.lib and object E:\Projects\It's Bedtime\trunk\Intermediate\Build\Win64\ObjectOutlineEditor\Development\UE4Editor-ObjectOutline.exp
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (8 processors): 0.00 building projects, 0.45 compiling, 0.00 creating app bundles, 0.00 generating debug info, 1.92 linking, 0.00 other
-         UBT execution time: 6.44 seconds
+         Cumulative action seconds (8 processors): 0.00 building projects, 0.41 compiling, 0.00 creating app bundles, 0.00 generating debug info, 1.62 linking, 0.00 other
+         UBT execution time: 7.06 seconds
      1>Done Building Project "E:\Projects\It's Bedtime\trunk\Intermediate\ProjectFiles\ObjectOutline.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:06.63
+Time Elapsed 00:00:07.40
