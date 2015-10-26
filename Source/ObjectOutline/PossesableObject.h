@@ -26,24 +26,26 @@ public:
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	float mWeight;
+	float Weight;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = ItemPossession)
-	float mMaliceMoveCost;
+	float MaliceMoveCost;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = ItemPossession)
-	float mMaliceLevitateCost;
+	float MaliceLevitateCost;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	float mFearCoeficient;					   
+	float FearCoeficient;					   
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	float mTKSpeed;							  
+	float TKSpeed;							  
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	float mLevitationSpeed;					  
+	float LevitationSpeed;					  
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	bool mMovable;							
+	bool Movable;							
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	bool mLevitatable;	
+	bool Levitatable;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = ItemPossession)
-	FLinearColor mColor;
+	bool Possessable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = ItemPossession)
+	FLinearColor OutlineColor;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta=(AllowPrivateAccess = "true"), Category=ItemPossession)
-	TArray<FString> mActions;
+	TArray<FString> Actions;
 	
 };

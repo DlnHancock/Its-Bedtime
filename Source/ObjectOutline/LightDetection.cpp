@@ -50,10 +50,12 @@ bool ULightDetection::GetLightingCondition(AActor * owner, UCapsuleComponent * c
 	// Loop through all lights,
 	for (TObjectIterator<ULightComponent> Itr; Itr; ++Itr)
 	{
+		if(!IsValid(*Itr))
+			continue;
+
 		AActor* tempLightOwner = Itr->GetOwner();
 		if(!IsValid(tempLightOwner))
 			continue;
-
 		
 		FVector ownerPos =  owner->GetActorLocation();
 		FVector lightPos = Itr->GetComponentLocation();
@@ -74,43 +76,45 @@ bool ULightDetection::GetLightingCondition(AActor * owner, UCapsuleComponent * c
 
 		lightsFound += 1;
 
+
+		//Reverse light calculation acording to type to get intensisty at player's location
 		switch (Itr->GetLightType())
 		{
-		case ELightComponentType::LightType_Directional:
-		{
-			UDirectionalLightComponent* directionalLight = Cast<UDirectionalLightComponent>(*Itr);
+			case ELightComponentType::LightType_Directional:
+			{
+				UDirectionalLightComponent* directionalLight = Cast<UDirectionalLightComponent>(*Itr);
 
-			averageLight += directionalLight->Intensity;
+				averageLight += directionalLight->Intensity;
 
-			break;
-		}
+				break;
+			}
 
-		case ELightComponentType::LightType_Point:
-		{
-			UPointLightComponent* pointLight = Cast<UPointLightComponent>(*Itr);
+			case ELightComponentType::LightType_Point:
+			{
+				UPointLightComponent* pointLight = Cast<UPointLightComponent>(*Itr);
 
-			float wattage = pointLight->Intensity;
-			float distance = FVector::Dist(ownerPos, lightPos) / 100;
-			float surfaceArea = 4 * PI * FMath::Square(distance);
-			float light = wattage / surfaceArea;
+				float wattage = pointLight->Intensity;
+				float distance = FVector::Dist(ownerPos, lightPos) / 100;
+				float surfaceArea = 4 * PI * FMath::Square(distance);
+				float light = wattage / surfaceArea;
 
-			averageLight += light;
+				averageLight += light;
 
-			break;
-		}
+				break;
+			}
 
-		case ELightComponentType::LightType_Spot:
-		{
-			USpotLightComponent* spotLight = Cast<USpotLightComponent>(*Itr);
+			case ELightComponentType::LightType_Spot:
+			{
+				USpotLightComponent* spotLight = Cast<USpotLightComponent>(*Itr);
 
-			float wattage = spotLight->Intensity;
-			float distance = FVector::Dist(ownerPos, lightPos) / 1000;
-			float slantLength = FMath::Sqrt(FMath::Square(spotLight->AttenuationRadius) + FMath::Square(spotLight->AttenuationRadius));
-			float surfaceArea = (PI * FMath::Square(distance)) + (PI * distance * slantLength);
-			float light = wattage / surfaceArea;
-			averageLight += light;
-			break;
-		}
+				float wattage = spotLight->Intensity;
+				float distance = FVector::Dist(ownerPos, lightPos) / 1000;
+				float slantLength = FMath::Sqrt(FMath::Square(spotLight->AttenuationRadius) + FMath::Square(spotLight->AttenuationRadius));
+				float surfaceArea = (PI * FMath::Square(distance)) + (PI * distance * slantLength);
+				float light = wattage / surfaceArea;
+				averageLight += light;
+				break;
+			}
 		}
 		// Draw a Debug Line to show how the light is hitting the character
 		DrawDebugLine(GetWorld(), lightPos, ownerPos, FColor::Yellow);
