@@ -1,4 +1,4 @@
-﻿Log file open, 12/08/15 03:01:11
+﻿Log file open, 12/08/15 08:28:51
 LogInit:Display: Running engine for game: ObjectOutline
 LogInit: Version: 4.7.6-2513093+++depot+UE4-Releases+4.7
 LogInit: API Version: 2455222
@@ -7,429 +7,894 @@ LogInit: Compiled with Visual C++: 18.00.21005.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++depot+UE4-Releases+4.7
 LogInit: Command line: 
-LogInit: Base directory: F:/Program Files/Epic Games/4.7/Engine/Binaries/Win64/
+LogInit: Base directory: C:/Program Files/Epic Games/4.7/Engine/Binaries/Win64/
 LogInit: Rocket: 1
-[2015.12.08-11.01.11:212][  0]LogTaskGraph: Started task graph with 3 named threads and 6 total threads.
-[2015.12.08-11.01.11:266][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
-[2015.12.08-11.01.11:277][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2015.12.08-11.01.11:284][  0]LogInit: Object subsystem initialized
-[2015.12.08-11.01.11:288][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'TranslucentSortAxis = (X=0.000000,Y=-1.000000,Z=0.000000)'
-[2015.12.08-11.01.11:288][  0]LogConsoleResponse:Warning:   Found in ini file 'F:/Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.12.08-11.01.11:288][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleRule = ShortestSide'
-[2015.12.08-11.01.11:288][  0]LogConsoleResponse:Warning:   Found in ini file 'F:/Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.12.08-11.01.11:288][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleCurve = (EditorCurveData=(Keys=),ExternalCurve=None)'
-[2015.12.08-11.01.11:288][  0]LogConsoleResponse:Warning:   Found in ini file 'F:/Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.12.08-11.01.11:288][  0]LogInit: Selected Device Profile: [Windows]
-[2015.12.08-11.01.11:288][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2015.12.08-11.01.11:294][  0]LogInit: Computer: DICKMACHINE
-[2015.12.08-11.01.11:294][  0]LogInit: User: justi
-[2015.12.08-11.01.11:294][  0]LogInit: CPU Page size=4096, Cores=4
-[2015.12.08-11.01.11:294][  0]LogInit: High frequency timer resolution =3.417962 MHz
-[2015.12.08-11.01.11:294][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx) Virtual=131072.0GB
-[2015.12.08-11.01.11:294][  0]LogMemory: Platform Memory Stats for Windows
-[2015.12.08-11.01.11:294][  0]LogMemory: Process Physical Memory: 48.23 MB used, 48.23 MB peak
-[2015.12.08-11.01.11:294][  0]LogMemory: Process Virtual Memory: 24.88 MB used, 24.88 MB peak
-[2015.12.08-11.01.11:294][  0]LogMemory: Physical Memory: 3761.03 MB used, 8060.63 MB total
-[2015.12.08-11.01.11:294][  0]LogMemory: Virtual Memory: 290.83 MB used, 134217728.00 MB total
-[2015.12.08-11.01.11:311][  0]LogD3D11RHI: Found D3D11 adapter 0: AMD Radeon R9 200 Series (Feature Level 11_0)
-[2015.12.08-11.01.11:311][  0]LogD3D11RHI: Adapter has 3054MB of dedicated video memory, 0MB of dedicated system memory, and 4030MB of shared system memory, 2 output[s]
-[2015.12.08-11.01.11:317][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 4600 (Feature Level 11_0)
-[2015.12.08-11.01.11:317][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 1792MB of shared system memory, 0 output[s]
-[2015.12.08-11.01.11:318][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
-[2015.12.08-11.01.11:318][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4030MB of shared system memory, 0 output[s]
-[2015.12.08-11.01.11:318][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2015.12.08-11.01.11:324][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2015.12.08-11.01.11:330][  0]LogD3D11RHI: Async texture creation disabled: no driver support
-[2015.12.08-11.01.11:388][  0]LogTextLocalizationManager: The requested culture ('en_CA') has no localization data; parent culture's ('en') localization data will be used.
-[2015.12.08-11.01.11:481][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:UICommands, Key:Save_ToolTip):
-Resource: (F:/Program Files/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-29098895) String: (Saves the current level to disk)
-Resource: (F:/Program Files/Epic Games/4.7/Engine/Content/Localization/Engine/en/Engine.locres) Hash: (-1280300587) String: (Save selected data to vlog file)
-[2015.12.08-11.01.11:481][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
-Resource: (F:/Program Files/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-630476809) String: (Import to {0}...)
-Resource: (F:/Program Files/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (1271782899) String: (Imports an asset from file to this folder.)
-[2015.12.08-11.01.11:566][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2015.12.08-11.01.13:649][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.12.08-11.01.14:259][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.12.08-11.01.14:313][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2015.12.08-11.01.14:363][  0]LogDerivedDataCache: Loaded boot cache 0.05s 39MB C:/Users/justi/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
-[2015.12.08-11.01.14:363][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/justi/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc
-[2015.12.08-11.01.14:363][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2015.12.08-11.01.14:363][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2015.12.08-11.01.14:463][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2015.12.08-11.01.14:475][  0]LogDerivedDataCache: Using Local data cache path C:/Users/justi/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2015.12.08-11.01.14:717][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2015.12.08-11.01.14:717][  0]LogMeshUtilities: No automatic mesh merging module available
-[2015.12.08-11.01.15:070][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2015.12.08-11.01.15:142][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf'
-[2015.12.08-11.01.15:862][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2015.12.08-11.01.16:060][  0]SourceControl: Info Source control is disabled
-[2015.12.08-11.01.16:060][  0]SourceControl: Info Source control is disabled
-[2015.12.08-11.01.16:060][  0]SourceControl: Info Source control is disabled
-[2015.12.08-11.01.16:060][  0]LogSourceControl: RunCommandInternalRaw: 'git version'
-[2015.12.08-11.01.16:060][  0]LogSourceControl: RunCommandInternalRaw: ExecProcess ReturnCode=2 OutResults=''
-[2015.12.08-11.01.16:068][  0]SourceControl: Info Source control is disabled
-[2015.12.08-11.01.16:235][  0]LogObj: 24256 objects as part of root set at end of initial load.
-[2015.12.08-11.01.16:235][  0]LogUObjectAllocator: 5141472 out of 0 bytes used by permanent object pool.
-[2015.12.08-11.01.16:313][  0]LogEngine: Initializing Engine...
-[2015.12.08-11.01.18:455][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2015.12.08-11.01.18:466][  0]LogInit: FAudioDevice initialized.
-[2015.12.08-11.01.18:499][  0]LogAIModule: Creating AISystem for world NewWorld
-[2015.12.08-11.01.18:534][  0]LogDerivedDataCache: Saved boot cache 0.03s 39MB C:/Users/justi/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
-[2015.12.08-11.01.18:544][  0]LogInit: Texture streaming: Enabled
-[2015.12.08-11.01.18:629][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2015.12.08-11.01.18:629][  0]LogAnalytics: ET APIKey = Rocket.Release. APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.7.6-2513093+++depot+UE4-Releases+4.7
-[2015.12.08-11.01.18:629][  0]LogAnalytics: ET APIKey = Rocket.Release. DataRouterUploadURL = https://datarouter-public-service-gamedev.ol.epicgames.net/datarouter/api/v1/public/data. AppVersion = 4.7.6-2513093+++depot+UE4-Releases+4.7
-[2015.12.08-11.01.18:629][  0]LogAnalytics: SetUserId ff1093ae415ae7c49affc187aed52151|8de8dc05c5c342ba9854213e333a047a|44775640-d5d1-4245-88af-41a240f7ff6a
-[2015.12.08-11.01.18:629][  0]LogAnalytics: AnalyticsET::StartSession [Rocket.Release]
-[2015.12.08-11.01.18:651][  0]LogInit: Transaction tracking system initialized
-[2015.12.08-11.01.18:822][  0]BlueprintLog: New page: Editor Load
-[2015.12.08-11.01.18:854][  0]LogAssetRegistry: FAssetRegistry took 0.0108 seconds to start up
-[2015.12.08-11.01.18:854][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
-[2015.12.08-11.01.19:538][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.12.08-11.01.20:218][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.12.08-11.01.20:488][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Regular.ttf'
-[2015.12.08-11.01.20:489][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Bold.ttf'
-[2015.12.08-11.01.20:493][  0]LogConsoleResponse:Display: 
-[2015.12.08-11.01.20:637][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2015.12.08-11.01.20:780][  0]SourceControl: Info Source control is disabled
-[2015.12.08-11.01.20:780][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Maps/Room.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.12.08-11.01.20:781][  0]LightingResults: New page: Lighting Build
-[2015.12.08-11.01.20:796][  0]MapCheck: New page: Map Check
-[2015.12.08-11.01.20:796][  0]LightingResults: New page: Lighting Build
-[2015.12.08-11.01.20:822][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D283FFE980
-[2015.12.08-11.01.20:912][  0]LogLinker:Warning: Asset '../../../Engine/Content/EngineMeshes/Humanoid.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.12.08-11.01.22:393][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
-[2015.12.08-11.01.22:394][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Blueprints/FearMeter.uasset.
-[2015.12.08-11.01.22:394][  0]LoadErrors:Error: Error /Game/Blueprints/FearMeter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
-[2015.12.08-11.01.22:394][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
-[2015.12.08-11.01.22:394][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Blueprints/FearMeter.uasset.
-[2015.12.08-11.01.22:394][  0]LoadErrors:Error: Error /Game/Blueprints/FearMeter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
-[2015.12.08-11.01.22:395][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
-[2015.12.08-11.01.22:395][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Blueprints/MyCharacter.uasset.
-[2015.12.08-11.01.22:395][  0]LoadErrors:Error: Error /Game/Blueprints/MyCharacter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
-[2015.12.08-11.01.22:395][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
-[2015.12.08-11.01.22:395][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Blueprints/MyCharacter.uasset.
-[2015.12.08-11.01.22:395][  0]LoadErrors:Error: Error /Game/Blueprints/MyCharacter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
-[2015.12.08-11.01.22:396][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
-[2015.12.08-11.01.22:396][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyCharacter.MyCharacter_C Referenced by StaticMeshComponent0
-[2015.12.08-11.01.22:396][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Blueprints/MyCharacter.uasset.
-[2015.12.08-11.01.22:396][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyCharacter.MyCharacter_C Referenced by StaticMeshComponent0
-[2015.12.08-11.01.22:396][  0]LoadErrors:Error: Error /Game/Blueprints/MyCharacter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
-[2015.12.08-11.01.22:440][  0]LogLinker:Warning: Asset '../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/PP_Outliner_M.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.12.08-11.01.22:458][  0]LogLinker:Warning: Asset '../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/MF_ConvolveTexture.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.12.08-11.01.22:471][  0]LogLinker:Warning: Asset '../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/MF_ExtractDepth.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.12.08-11.01.22:490][  0]LogLinker:Warning: Asset '../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/MF_SampleSceneTextureNeighbourUVs.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.12.08-11.01.29:135][  0]LogLinker:Warning: Asset '../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/PP_Outliner_Inst.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.12.08-11.01.29:280][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
-[2015.12.08-11.01.29:280][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Blueprints/Pause.uasset.
-[2015.12.08-11.01.29:280][  0]LoadErrors:Error: Error /Game/Blueprints/Pause : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
-[2015.12.08-11.01.29:281][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
-[2015.12.08-11.01.29:281][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Blueprints/Pause.uasset.
-[2015.12.08-11.01.29:281][  0]LoadErrors:Error: Error /Game/Blueprints/Pause : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
-[2015.12.08-11.01.29:282][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
-[2015.12.08-11.01.29:282][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Maps/Room.umap.
-[2015.12.08-11.01.29:282][  0]LoadErrors:Error: Error /Game/Maps/Room : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
-[2015.12.08-11.01.29:282][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
-[2015.12.08-11.01.29:282][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Maps/Room.umap.
-[2015.12.08-11.01.29:282][  0]LoadErrors:Error: Error /Game/Maps/Room : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
-[2015.12.08-11.01.29:284][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
-[2015.12.08-11.01.29:284][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_247
-[2015.12.08-11.01.29:285][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Maps/Room.umap.
-[2015.12.08-11.01.29:285][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_247
-[2015.12.08-11.01.29:285][  0]LoadErrors:Error: Error /Game/Maps/Room : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
-[2015.12.08-11.01.30:763][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
-[2015.12.08-11.01.30:763][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_2
-[2015.12.08-11.01.30:763][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading NULL.
-[2015.12.08-11.01.30:763][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_2
-[2015.12.08-11.01.31:711][  0]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
-[2015.12.08-11.01.31:731][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.12.08-11.01.31:731][  0]LogAIModule: Creating AISystem for world Room
-[2015.12.08-11.01.31:732][  0]Cmd: MAP CHECKDEP
-[2015.12.08-11.01.31:732][  0]MapCheck: New page: Room - Dec 7, 2015, 7:01:31 PM
-[2015.12.08-11.01.31:918][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 185.145ms to complete.
-[2015.12.08-11.01.31:918][  0]LogFileHelpers: Loading map 'Room' took 11.138
-[2015.12.08-11.01.32:088][  0]LogCollectionManager: Loaded 0 collections in 0.001166 seconds
-[2015.12.08-11.01.32:099][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 1698 classes and 263 folders.
-[2015.12.08-11.01.32:145][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0052 seconds. Added 1 classes and 2 folders.
-[2015.12.08-11.01.32:205][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2015.12.08-11.01.32:206][  0]LogSlate:Warning: Failed to load font data from 'Veranda'
-[2015.12.08-11.01.32:209][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2015.12.08-11.01.32:234][  0]LogLoad: Full Startup: 22.96 seconds (BP compile: 3.21 seconds)
-[2015.12.08-11.01.32:250][  0]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures'
-[2015.12.08-11.01.32:440][  0]LogRenderer:Warning: Reallocating scene render targets to support 32x32 (Frame:2).
-[2015.12.08-11.01.32:554][  0]LogRenderer:Warning: Reallocating scene render targets to support 616x304 (Frame:15).
-[2015.12.08-11.01.33:207][  4]LogAssetRegistry: Asset discovery search completed in 14.3642 seconds
-[2015.12.08-11.01.46:977][405]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Materials'
-[2015.12.08-11.01.47:040][407]LogMaterial: Missing cached shader map for material Material_0, compiling. 
-[2015.12.08-11.01.47:055][407]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
-[2015.12.08-11.01.47:078][408]LogMaterial: Missing cached shader map for material Material_1, compiling. 
-[2015.12.08-11.01.47:078][408]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Material_1 for platform PCD3D_SM5, Default Material will be used in game.
-[2015.12.08-11.01.47:078][408]LogMaterial:Warning: 	SceneTexture expressions cannot be used in opaque materials
-[2015.12.08-11.01.47:087][408]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
-[2015.12.08-11.01.47:117][409]LogMaterial: Missing cached shader map for material Material_2, compiling. 
-[2015.12.08-11.01.47:130][409]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
-[2015.12.08-11.01.50:237][587]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/Door_and_Frame_textures'
-[2015.12.08-11.01.50:237][587]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/Door_and_Frame_textures' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/Door.uasset.
-[2015.12.08-11.01.50:237][587]LoadErrors:Error: Error /Game/Materials/Door : Can't find file for asset. /Game/Textures/Lucas_textures/Door_and_Frame_textures
-[2015.12.08-11.01.50:237][587]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/Door_and_Frame_textures'
-[2015.12.08-11.01.50:237][587]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/Door_and_Frame_textures' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/Door.uasset.
-[2015.12.08-11.01.50:238][587]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/Door_and_Frame_textures'
-[2015.12.08-11.01.50:238][587]LoadErrors: Info Failed to load /Game/Textures/Lucas_textures/Door_and_Frame_textures.Door_and_Frame_textures Referenced by MaterialExpressionTextureSample_4
-[2015.12.08-11.01.50:238][587]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/Door_and_Frame_textures' while loading NULL.
-[2015.12.08-11.01.50:239][587]LogMaterial: Missing cached shader map for material Door, compiling. 
-[2015.12.08-11.01.50:240][587]LogMaterial:Warning: Failed to compile Material /Game/Materials/Door.Door for platform PCD3D_SM5, Default Material will be used in game.
-[2015.12.08-11.01.50:240][587]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
-[2015.12.08-11.01.59:508][262]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/RockingChair_texture'
-[2015.12.08-11.01.59:508][262]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/RockingChair_texture' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/Rocking_Chair.uasset.
-[2015.12.08-11.01.59:509][262]LoadErrors:Error: Error /Game/Materials/Rocking_Chair : Can't find file for asset. /Game/Textures/Lucas_textures/RockingChair_texture
-[2015.12.08-11.01.59:509][262]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/RockingChair_texture'
-[2015.12.08-11.01.59:509][262]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/RockingChair_texture' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/Rocking_Chair.uasset.
-[2015.12.08-11.01.59:510][262]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/RockingChair_texture'
-[2015.12.08-11.01.59:510][262]LoadErrors: Info Failed to load /Game/Textures/Lucas_textures/RockingChair_texture.RockingChair_texture Referenced by MaterialExpressionTextureSample_2
-[2015.12.08-11.01.59:510][262]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/RockingChair_texture' while loading NULL.
-[2015.12.08-11.01.59:512][262]LogMaterial: Missing cached shader map for material Rocking_Chair, compiling. 
-[2015.12.08-11.01.59:512][262]LogMaterial:Warning: Failed to compile Material /Game/Materials/Rocking_Chair.Rocking_Chair for platform PCD3D_SM5, Default Material will be used in game.
-[2015.12.08-11.01.59:512][262]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
-[2015.12.08-11.02.03:300][454]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/snes_controller'
-[2015.12.08-11.02.03:300][454]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/snes_controller' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/SNES_Controller.uasset.
-[2015.12.08-11.02.03:300][454]LoadErrors:Error: Error /Game/Materials/SNES_Controller : Can't find file for asset. /Game/Textures/Lucas_textures/snes_controller
-[2015.12.08-11.02.03:300][454]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/snes_controller'
-[2015.12.08-11.02.03:300][454]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/snes_controller' while loading ../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Materials/SNES_Controller.uasset.
-[2015.12.08-11.02.03:301][454]LogLinker:Warning: Can't find file '/Game/Textures/Lucas_textures/snes_controller'
-[2015.12.08-11.02.03:301][454]LoadErrors: Info Failed to load /Game/Textures/Lucas_textures/snes_controller.snes_controller Referenced by MaterialExpressionTextureSample_1
-[2015.12.08-11.02.03:301][454]LogLinker:Warning: Can't find file for asset '/Game/Textures/Lucas_textures/snes_controller' while loading NULL.
-[2015.12.08-11.02.03:302][454]LogMaterial: Missing cached shader map for material SNES_Controller, compiling. 
-[2015.12.08-11.02.03:302][454]LogMaterial:Warning: Failed to compile Material /Game/Materials/SNES_Controller.SNES_Controller for platform PCD3D_SM5, Default Material will be used in game.
-[2015.12.08-11.02.03:302][454]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
-[2015.12.08-11.02.07:509][642]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Materials/Fabian'
-[2015.12.08-11.02.14:172][  5]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Materials/Georgia'
-[2015.12.08-11.02.15:419][138]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Materials/Justin'
-[2015.12.08-11.02.16:692][221]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Materials/Lucas'
-[2015.12.08-11.02.33:162][181]LogContentBrowser:Verbose: The content browser source was changed by the sources view to 'None'
-[2015.12.08-11.02.35:182][357]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Meshes'
-[2015.12.08-11.02.37:064][540]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Meshes/Fabian'
-[2015.12.08-11.03.15:861][935]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Meshes/Georgia'
-[2015.12.08-11.03.17:987][ 78]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Meshes/Lucas'
-[2015.12.08-11.03.19:617][174]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Meshes/Fabian'
-[2015.12.08-11.03.21:324][275]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Meshes/Georgia'
-[2015.12.08-11.03.25:018][527]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Meshes/Lucas'
-[2015.12.08-11.03.40:970][467]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Props'
-[2015.12.08-11.03.42:433][620]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures'
-[2015.12.08-11.03.43:663][762]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/ThirdPersonBP'
-[2015.12.08-11.03.44:811][894]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures'
-[2015.12.08-11.03.45:679][984]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures/BasketBall'
-[2015.12.08-11.03.48:446][290]LogContentBrowser:Verbose: The content browser source was changed by the sources view to 'None'
-[2015.12.08-11.03.51:908][601]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures'
-[2015.12.08-11.04.00:254][483]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures/Fabian'
-[2015.12.08-11.04.03:487][771]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures/Georgia'
-[2015.12.08-11.04.05:364][981]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures/Justin'
-[2015.12.08-11.04.08:314][301]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures/Lucas_textures'
-[2015.12.08-11.04.10:097][502]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures/Georgia'
-[2015.12.08-11.04.11:439][652]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Textures/Fabian'
-[2015.12.08-11.04.17:248][ 61]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Maps/Room.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2015.12.08-11.04.17:898][ 61]LogSavePackage: Save=570.633301ms
-[2015.12.08-11.04.17:899][ 61]LogSavePackage: Moving '../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Saved/RoomDE7DFE784D91C9E76F0E13875D4CC775.tmp' to '../../../../../../Users/Justin/Documents/Unreal Projects/It's Bedtime - Copy/trunk/Content/Maps/Room.umap'
-[2015.12.08-11.04.17:937][ 61]LogFileHelpers: Saving map 'Room' took 0.873
-[2015.12.08-11.07.53:322][ 52]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Animations'
-[2015.12.08-11.07.53:715][ 78]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Audio'
-[2015.12.08-11.07.57:217][382]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Blueprints'
-[2015.12.08-11.07.59:347][591]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Character'
-[2015.12.08-11.07.59:924][623]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Maps'
-[2015.12.08-11.08.00:722][690]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Character'
-[2015.12.08-11.08.01:360][738]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Maps'
-[2015.12.08-11.08.01:941][803]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Materials'
-[2015.12.08-11.08.06:595][197]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.12.08-11.08.06:595][197]LogActorComponent: UnregisterComponent: (/Engine/Transient.LightDetection_1) Not registered. Aborting.
-[2015.12.08-11.08.07:271][198]Cmd: QUIT_EDITOR
-[2015.12.08-11.08.07:535][198]LogExit: Preparing to exit.
-[2015.12.08-11.08.08:125][198]LogExit: Editor shut down
-[2015.12.08-11.08.08:127][198]LogExit: Transaction tracking system shut down
-[2015.12.08-11.08.08:130][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D2915B2340
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D2FB8F5C60
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D2890C4A40
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D2935BC860
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D293701580
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D29322ADE0
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D29322A3E0
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D28CACB380
-[2015.12.08-11.08.08:131][198]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000D28CAC8860
-[2015.12.08-11.08.08:296][198]LogExit: Object subsystem successfully closed.
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module CrashTracker (178)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module SuperSearch (177)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module SceneOutliner (176)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module EditorWidgets (175)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module CollectionManager (174)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module StatsViewer (173)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module FoliageEdit (172)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module LandscapeEditor (171)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module MeshPaint (170)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module ActorPickerMode (169)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module GeometryMode (168)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module TextureAlignMode (167)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module BspMode (166)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module PlacementMode (165)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module AutomationWorker (164)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module CharacterAI (163)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module SmartSnapping (162)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module ViewportSnapping (161)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module LogVisualizer (160)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (159)
-[2015.12.08-11.08.08:346][198]LogModuleManager: Shutting down and abandoning module IntroTutorials (158)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (157)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module HardwareTargeting (156)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (155)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module UndoHistory (154)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (153)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module UserFeedback (152)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module XmlParser (151)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module Blutility (150)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (149)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (148)
-[2015.12.08-11.08.08:347][198]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (147)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (146)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (145)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (144)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (143)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module InputBindingEditor (142)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (141)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module SettingsEditor (140)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module ProjectLauncher (139)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module SessionFrontend (138)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module ProfilerClient (137)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (136)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module DeviceManager (135)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module AutomationController (134)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module AutomationWindow (133)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module Layers (132)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (131)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module DetailCustomizations (130)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module PackagesDialog (129)
-[2015.12.08-11.08.08:481][198]LogModuleManager: Shutting down and abandoning module AssetRegistry (128)
-[2015.12.08-11.08.08:611][198]LogModuleManager: Shutting down and abandoning module Persona (127)
-[2015.12.08-11.08.08:611][198]LogModuleManager: Shutting down and abandoning module SlateReflector (126)
-[2015.12.08-11.08.08:611][198]LogModuleManager: Shutting down and abandoning module LevelEditor (125)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module Kismet (124)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module GraphEditor (123)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module ClassViewer (122)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module Toolbox (121)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module ModuleUI (120)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module MovieSceneTools (119)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module OutputLog (118)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module GammaUI (117)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module Documentation (116)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (115)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (114)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module HTTP (113)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module AnalyticsET (112)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module Analytics (111)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module AITestSuite (110)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module GameplayDebugger (109)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module AIModule (108)
-[2015.12.08-11.08.08:612][198]LogModuleManager: Shutting down and abandoning module ProfilerService (107)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module TaskGraph (106)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module SlateRemote (105)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module ScriptEditorPlugin (104)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (103)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module CableComponent (102)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module MessagingDebugger (101)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (100)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (99)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module PluginsEditor (98)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module MainFrame (97)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module EpicSurvey (96)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module DesktopPlatform (95)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (94)
-[2015.12.08-11.08.08:629][198]LogModuleManager: Shutting down and abandoning module HotReload (93)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (92)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module UObjectPlugin (91)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (90)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (89)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module SourceControl (88)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module GitSourceControl (87)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module BlankPlugin (86)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (85)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module PaperJsonImporter (84)
-[2015.12.08-11.08.08:630][198]LogModuleManager: Shutting down and abandoning module ContentBrowser (83)
-[2015.12.08-11.08.08:633][198]LogModuleManager: Shutting down and abandoning module Paper2DEditor (82)
-[2015.12.08-11.08.08:633][198]LogModuleManager: Shutting down and abandoning module ObjectOutline (81)
-[2015.12.08-11.08.08:633][198]LogModuleManager: Shutting down and abandoning module ScriptPlugin (80)
-[2015.12.08-11.08.08:633][198]LogModuleManager: Shutting down and abandoning module UdpMessaging (79)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module Paper2D (78)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (77)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module Media (76)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module WmfMedia (75)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module PropertyEditor (73)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (72)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module FunctionalTesting (71)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (70)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (69)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module MessageLog (68)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module Sequencer (67)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module AssetTools (66)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module UMGEditor (65)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module UMG (64)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module Slate (63)
-[2015.12.08-11.08.08:734][198]LogModuleManager: Shutting down and abandoning module EditorStyle (62)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module SessionServices (61)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (60)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (59)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module XAudio2 (58)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module Networking (56)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module Core (55)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module KismetCompiler (54)
-[2015.12.08-11.08.08:742][198]LogModuleManager: Shutting down and abandoning module PhysXFormats (53)
-[2015.12.08-11.08.08:743][198]LogModuleManager: Shutting down and abandoning module MeshUtilities (52)
-[2015.12.08-11.08.08:743][198]LogModuleManager: Shutting down and abandoning module DerivedDataCache (51)
-[2015.12.08-11.08.08:749][198]LogDerivedDataCache: Shutdown
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (50)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (49)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (48)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (47)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (46)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (45)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (44)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module ImageWrapper (43)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (42)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (41)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (40)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (39)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (38)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (37)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (36)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (35)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Messaging (34)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (33)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (32)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (31)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (30)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (29)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Android_ES31TargetPlatform (28)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (27)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (26)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (25)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (24)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (23)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (22)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (21)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TargetPlatform (20)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module InputCore (19)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Settings (18)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (16)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module OculusRift (15)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (14)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module Landscape (11)
-[2015.12.08-11.08.08:749][198]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2015.12.08-11.08.08:752][198]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2015.12.08-11.08.08:752][198]LogExit: Exiting.
-[2015.12.08-11.08.08:766][198]Log file closed, 12/08/15 03:08:08
+[2015.12.08-16.28.51:269][  0]LogTaskGraph: Started task graph with 3 named threads and 6 total threads.
+[2015.12.08-16.28.51:336][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.12.08-16.28.51:353][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.12.08-16.28.51:364][  0]LogInit: Object subsystem initialized
+[2015.12.08-16.28.51:365][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'TranslucentSortAxis = (X=0.000000,Y=-1.000000,Z=0.000000)'
+[2015.12.08-16.28.51:365][  0]LogConsoleResponse:Warning:   Found in ini file 'C:/Users/339117/Desktop/BEDTIME/trunk/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.12.08-16.28.51:365][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleRule = ShortestSide'
+[2015.12.08-16.28.51:365][  0]LogConsoleResponse:Warning:   Found in ini file 'C:/Users/339117/Desktop/BEDTIME/trunk/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.12.08-16.28.51:365][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleCurve = (EditorCurveData=(Keys=),ExternalCurve=None)'
+[2015.12.08-16.28.51:365][  0]LogConsoleResponse:Warning:   Found in ini file 'C:/Users/339117/Desktop/BEDTIME/trunk/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.12.08-16.28.51:366][  0]LogInit: Selected Device Profile: [Windows]
+[2015.12.08-16.28.51:366][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.12.08-16.28.51:374][  0]LogInit: Computer: AI911LAB235P013
+[2015.12.08-16.28.51:374][  0]LogInit: User: 339117
+[2015.12.08-16.28.51:374][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.12.08-16.28.51:374][  0]LogInit: High frequency timer resolution =3.410097 MHz
+[2015.12.08-16.28.51:374][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx) Virtual=8192.0GB
+[2015.12.08-16.28.51:374][  0]LogMemory: Platform Memory Stats for Windows
+[2015.12.08-16.28.51:374][  0]LogMemory: Process Physical Memory: 48.41 MB used, 48.41 MB peak
+[2015.12.08-16.28.51:374][  0]LogMemory: Process Virtual Memory: 28.40 MB used, 28.40 MB peak
+[2015.12.08-16.28.51:374][  0]LogMemory: Physical Memory: 4150.00 MB used, 16291.31 MB total
+[2015.12.08-16.28.51:374][  0]LogMemory: Virtual Memory: 280.51 MB used, 8388608.00 MB total
+[2015.12.08-16.28.51:432][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
+[2015.12.08-16.28.51:432][  0]LogD3D11RHI: Adapter has 4008MB of dedicated video memory, 0MB of dedicated system memory, and 7889MB of shared system memory, 1 output[s]
+[2015.12.08-16.28.51:432][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.12.08-16.28.51:438][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2015.12.08-16.28.51:447][  0]LogD3D11RHI: Async texture creation enabled
+[2015.12.08-16.28.51:503][  0]LogTextLocalizationManager: The requested culture ('en_US') has no localization data; parent culture's ('en') localization data will be used.
+[2015.12.08-16.28.51:553][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:UICommands, Key:Save_ToolTip):
+Resource: (C:/Program Files/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-29098895) String: (Saves the current level to disk)
+Resource: (C:/Program Files/Epic Games/4.7/Engine/Content/Localization/Engine/en/Engine.locres) Hash: (-1280300587) String: (Save selected data to vlog file)
+[2015.12.08-16.28.51:553][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
+Resource: (C:/Program Files/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-630476809) String: (Import to {0}...)
+Resource: (C:/Program Files/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (1271782899) String: (Imports an asset from file to this folder.)
+[2015.12.08-16.28.51:622][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.12.08-16.28.53:791][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.12.08-16.28.54:265][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.12.08-16.28.54:319][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.12.08-16.28.54:361][  0]LogDerivedDataCache: Loaded boot cache 0.04s 39MB C:/Users/339117/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.12.08-16.28.54:361][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/339117/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc
+[2015.12.08-16.28.54:362][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/339117/Desktop/BEDTIME/trunk/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.12.08-16.28.54:362][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.12.08-16.28.54:464][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.12.08-16.28.54:475][  0]LogDerivedDataCache: Using Local data cache path C:/Users/339117/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.12.08-16.28.54:724][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.12.08-16.28.54:724][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.12.08-16.28.55:056][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.12.08-16.28.55:151][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf'
+[2015.12.08-16.28.55:939][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.12.08-16.28.56:162][  0]SourceControl: Info Source control is disabled
+[2015.12.08-16.28.56:162][  0]SourceControl: Info Source control is disabled
+[2015.12.08-16.28.56:162][  0]SourceControl: Info Source control is disabled
+[2015.12.08-16.28.56:162][  0]LogSourceControl: RunCommandInternalRaw: 'git version'
+[2015.12.08-16.28.56:162][  0]LogSourceControl: RunCommandInternalRaw: ExecProcess ReturnCode=2 OutResults=''
+[2015.12.08-16.28.56:172][  0]SourceControl: Info Source control is disabled
+[2015.12.08-16.28.56:385][  0]LogObj: 24256 objects as part of root set at end of initial load.
+[2015.12.08-16.28.56:385][  0]LogUObjectAllocator: 5141480 out of 0 bytes used by permanent object pool.
+[2015.12.08-16.28.56:456][  0]LogEngine: Initializing Engine...
+[2015.12.08-16.28.59:610][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.12.08-16.28.59:645][  0]LogInit: FAudioDevice initialized.
+[2015.12.08-16.28.59:711][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.12.08-16.28.59:733][  0]LogDerivedDataCache: Saved boot cache 0.02s 39MB C:/Users/339117/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.12.08-16.28.59:737][  0]LogInit: Texture streaming: Enabled
+[2015.12.08-16.28.59:817][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.12.08-16.28.59:817][  0]LogAnalytics: ET APIKey = Rocket.Release. APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.7.6-2513093+++depot+UE4-Releases+4.7
+[2015.12.08-16.28.59:817][  0]LogAnalytics: ET APIKey = Rocket.Release. DataRouterUploadURL = https://datarouter-public-service-gamedev.ol.epicgames.net/datarouter/api/v1/public/data. AppVersion = 4.7.6-2513093+++depot+UE4-Releases+4.7
+[2015.12.08-16.28.59:817][  0]LogAnalytics: SetUserId d302aa8d4890e396f8cb5689ad0c78da|5f82de664dbc4b58876fbe9f0aeb44c5|aaf17b2f-19e2-4a6f-a642-0b863c0d63d6
+[2015.12.08-16.28.59:817][  0]LogAnalytics: AnalyticsET::StartSession [Rocket.Release]
+[2015.12.08-16.28.59:838][  0]LogInit: Transaction tracking system initialized
+[2015.12.08-16.29.00:019][  0]BlueprintLog: New page: Editor Load
+[2015.12.08-16.29.00:050][  0]LogAssetRegistry: FAssetRegistry took 0.0096 seconds to start up
+[2015.12.08-16.29.00:051][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
+[2015.12.08-16.29.00:557][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.12.08-16.29.00:912][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.12.08-16.29.01:154][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Regular.ttf'
+[2015.12.08-16.29.01:155][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Bold.ttf'
+[2015.12.08-16.29.01:159][  0]LogConsoleResponse:Display: 
+[2015.12.08-16.29.01:306][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.12.08-16.29.01:445][  0]SourceControl: Info Source control is disabled
+[2015.12.08-16.29.01:445][  0]Cmd: MAP LOAD FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.12.08-16.29.01:446][  0]LightingResults: New page: Lighting Build
+[2015.12.08-16.29.01:457][  0]MapCheck: New page: Map Check
+[2015.12.08-16.29.01:457][  0]LightingResults: New page: Lighting Build
+[2015.12.08-16.29.01:466][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000003EC6980
+[2015.12.08-16.29.01:494][  0]LogLinker:Warning: Asset '../../../Engine/Content/EngineMeshes/Humanoid.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.12.08-16.29.02:290][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
+[2015.12.08-16.29.02:290][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Blueprints/FearMeter.uasset.
+[2015.12.08-16.29.02:291][  0]LoadErrors:Error: Error /Game/Blueprints/FearMeter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
+[2015.12.08-16.29.02:291][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
+[2015.12.08-16.29.02:291][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Blueprints/FearMeter.uasset.
+[2015.12.08-16.29.02:291][  0]LoadErrors:Error: Error /Game/Blueprints/FearMeter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
+[2015.12.08-16.29.02:292][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
+[2015.12.08-16.29.02:293][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Blueprints/MyCharacter.uasset.
+[2015.12.08-16.29.02:293][  0]LoadErrors:Error: Error /Game/Blueprints/MyCharacter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
+[2015.12.08-16.29.02:293][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
+[2015.12.08-16.29.02:293][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Blueprints/MyCharacter.uasset.
+[2015.12.08-16.29.02:293][  0]LoadErrors:Error: Error /Game/Blueprints/MyCharacter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
+[2015.12.08-16.29.02:294][  0]LogLinker:Warning: Can't find file '/Game/Meshes/Teddy_Mesh'
+[2015.12.08-16.29.02:295][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyCharacter.MyCharacter_C Referenced by StaticMeshComponent0
+[2015.12.08-16.29.02:295][  0]LogLinker:Warning: Can't find file for asset '/Game/Meshes/Teddy_Mesh' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Blueprints/MyCharacter.uasset.
+[2015.12.08-16.29.02:295][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyCharacter.MyCharacter_C Referenced by StaticMeshComponent0
+[2015.12.08-16.29.02:295][  0]LoadErrors:Error: Error /Game/Blueprints/MyCharacter : Can't find file for asset. /Game/Meshes/Teddy_Mesh
+[2015.12.08-16.29.02:323][  0]LogLinker:Warning: Asset '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Materials/PP_Outliner_M.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.12.08-16.29.02:326][  0]LogLinker:Warning: Asset '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Materials/MF_ConvolveTexture.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.12.08-16.29.02:330][  0]LogLinker:Warning: Asset '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Materials/MF_ExtractDepth.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.12.08-16.29.02:331][  0]LogLinker:Warning: Asset '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Materials/MF_SampleSceneTextureNeighbourUVs.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.12.08-16.29.07:016][  0]LogLinker:Warning: Asset '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Materials/PP_Outliner_Inst.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.12.08-16.29.07:090][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
+[2015.12.08-16.29.07:090][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Blueprints/Pause.uasset.
+[2015.12.08-16.29.07:090][  0]LoadErrors:Error: Error /Game/Blueprints/Pause : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
+[2015.12.08-16.29.07:091][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
+[2015.12.08-16.29.07:091][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Blueprints/Pause.uasset.
+[2015.12.08-16.29.07:091][  0]LoadErrors:Error: Error /Game/Blueprints/Pause : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
+[2015.12.08-16.29.07:092][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
+[2015.12.08-16.29.07:092][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap.
+[2015.12.08-16.29.07:092][  0]LoadErrors:Error: Error /Game/Maps/Room : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
+[2015.12.08-16.29.07:092][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
+[2015.12.08-16.29.07:093][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap.
+[2015.12.08-16.29.07:093][  0]LoadErrors:Error: Error /Game/Maps/Room : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
+[2015.12.08-16.29.07:096][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
+[2015.12.08-16.29.07:096][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_247
+[2015.12.08-16.29.07:096][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading ../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap.
+[2015.12.08-16.29.07:096][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_247
+[2015.12.08-16.29.07:096][  0]LoadErrors:Error: Error /Game/Maps/Room : Can't find file for asset. /Game/Blueprints/Menu_art/pause3
+[2015.12.08-16.29.07:534][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/Menu_art/pause3'
+[2015.12.08-16.29.07:534][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_2
+[2015.12.08-16.29.07:535][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Menu_art/pause3' while loading NULL.
+[2015.12.08-16.29.07:535][  0]LoadErrors: Info Failed to load /Game/Blueprints/Menu_art/pause3.pause3 Referenced by Image_2
+[2015.12.08-16.29.07:688][  0]LogMaterial: Missing cached shader map for material PP_Outliner_M, compiling. 
+[2015.12.08-16.29.07:836][  0]LogMaterial: Missing cached shader map for material CubeMaterial, compiling. 
+[2015.12.08-16.29.07:881][  0]LogMaterial: Missing cached shader map for material Glass, compiling. 
+[2015.12.08-16.29.08:017][  0]LogTexture:Display: Building textures: alert_eye (AutoDXT)
+[2015.12.08-16.29.08:109][  0]LogTexture:Display: Building textures: Idle_eye (AutoDXT)
+[2015.12.08-16.29.08:156][  0]LogTexture:Display: Building textures: Asleep_eye (AutoDXT)
+[2015.12.08-16.29.08:208][  0]LogTexture:Display: Building textures: Scared_eye (AutoDXT)
+[2015.12.08-16.29.08:285][  0]LogStaticMesh: Building static mesh basketball...
+[2015.12.08-16.29.08:403][  0]LogStaticMesh: Built static mesh [117.995766ms] /Game/Meshes/Fabian/basketball.basketball
+[2015.12.08-16.29.09:254][  0]LogTexture:Display: Building textures: bed_v2_diffuse (AutoDXT)
+[2015.12.08-16.29.25:165][  0]LogTexture:Display: Building textures: bed_v2_spec (AutoDXT)
+[2015.12.08-16.29.32:211][  0]LogTexture:Display: Building textures: bed_v2_bmp (AutoDXT)
+[2015.12.08-16.29.37:864][  0]LogMaterial: Missing cached shader map for material Bed2, compiling. 
+[2015.12.08-16.29.37:871][  0]LogStaticMesh: Building static mesh Wii_whole...
+[2015.12.08-16.29.37:889][  0]LogStaticMesh: Built static mesh [18.539942ms] /Game/Meshes/Lucas/Wii_whole.Wii_whole
+[2015.12.08-16.29.37:890][  0]LogStaticMesh: Building static mesh whiteboard...
+[2015.12.08-16.29.37:894][  0]LogStaticMesh: Built static mesh [3.985517ms] /Game/Meshes/Fabian/whiteboard.whiteboard
+[2015.12.08-16.29.37:894][  0]LogStaticMesh: Building static mesh bedside_Table...
+[2015.12.08-16.29.37:914][  0]LogStaticMesh: Built static mesh [19.895914ms] /Game/Meshes/Fabian/bedside_Table.bedside_Table
+[2015.12.08-16.29.37:914][  0]LogStaticMesh: Building static mesh TV_screen_LK...
+[2015.12.08-16.29.37:919][  0]LogStaticMesh: Built static mesh [4.999858ms] /Game/Meshes/Lucas/TEST/TV_screen_LK.TV_screen_LK
+[2015.12.08-16.29.37:920][  0]LogStaticMesh: Building static mesh TV_plastics_LK...
+[2015.12.08-16.29.37:948][  0]LogStaticMesh: Built static mesh [28.487165ms] /Game/Meshes/Lucas/TEST/TV_plastics_LK.TV_plastics_LK
+[2015.12.08-16.29.37:950][  0]LogStaticMesh: Building static mesh toy_chest...
+[2015.12.08-16.29.38:121][  0]LogStaticMesh: Built static mesh [170.301895ms] /Game/Meshes/Fabian/toy_chest.toy_chest
+[2015.12.08-16.29.38:124][  0]LogStaticMesh: Building static mesh skateboard...
+[2015.12.08-16.29.38:473][  0]LogStaticMesh: Built static mesh [348.978638ms] /Game/Meshes/Fabian/skateboard.skateboard
+[2015.12.08-16.29.38:480][  0]LogStaticMesh: Building static mesh stero...
+[2015.12.08-16.29.38:506][  0]LogStaticMesh: Built static mesh [25.780499ms] /Game/Meshes/Fabian/stero.stero
+[2015.12.08-16.29.38:507][  0]LogStaticMesh: Building static mesh speakers...
+[2015.12.08-16.29.38:544][  0]LogStaticMesh: Built static mesh [36.759071ms] /Game/Meshes/Fabian/speakers.speakers
+[2015.12.08-16.29.38:552][  0]LogStaticMesh: Building static mesh sml_picture_frame...
+[2015.12.08-16.29.38:557][  0]LogStaticMesh: Built static mesh [4.254718ms] /Game/Meshes/Fabian/sml_picture_frame.sml_picture_frame
+[2015.12.08-16.29.38:566][  0]LogStaticMesh: Building static mesh shoe_rack...
+[2015.12.08-16.29.38:583][  0]LogStaticMesh: Built static mesh [17.375460ms] /Game/Meshes/Fabian/shoe_rack.shoe_rack
+[2015.12.08-16.29.38:584][  0]LogStaticMesh: Building static mesh hanging_shelf...
+[2015.12.08-16.29.38:599][  0]LogStaticMesh: Built static mesh [15.192823ms] /Game/Meshes/Fabian/hanging_shelf.hanging_shelf
+[2015.12.08-16.29.38:599][  0]LogStaticMesh: Building static mesh BookShelf...
+[2015.12.08-16.29.38:609][  0]LogStaticMesh: Built static mesh [10.190033ms] /Game/Meshes/Fabian/BookShelf.BookShelf
+[2015.12.08-16.29.38:609][  0]LogStaticMesh: Building static mesh room_panel...
+[2015.12.08-16.29.38:612][  0]LogStaticMesh: Built static mesh [2.632183ms] /Game/Meshes/Fabian/room_panel.room_panel
+[2015.12.08-16.29.38:722][  0]LogTexture:Display: Building textures: baseballbat_bmp (AutoDXT)
+[2015.12.08-16.29.40:253][  0]LogTexture:Display: Building textures: baseball_bat_diffuse (AutoDXT)
+[2015.12.08-16.29.42:716][  0]LogTexture:Display: Building textures: baseball_bat_spec (AutoDXT)
+[2015.12.08-16.29.44:854][  0]LogMaterial: Missing cached shader map for material BaseballBat, compiling. 
+[2015.12.08-16.29.44:996][  0]LogTexture:Display: Building textures: skateboard-diffuse (AutoDXT)
+[2015.12.08-16.29.47:210][  0]LogTexture:Display: Building textures: skateboard_spec (AutoDXT)
+[2015.12.08-16.29.48:649][  0]LogMaterial: Missing cached shader map for material Skateboard, compiling. 
+[2015.12.08-16.29.48:835][  0]LogTexture:Display: Building textures: basketball_diffuse (AutoDXT)
+[2015.12.08-16.29.51:603][  0]LogTexture:Display: Building textures: BasketBall_NM_02 (BC5)
+[2015.12.08-16.29.52:081][  0]LogTexture:Display: Building textures: BasketBall_spec (AutoDXT)
+[2015.12.08-16.29.54:183][  0]LogMaterial: Missing cached shader map for material BasketBall, compiling. 
+[2015.12.08-16.29.54:936][  0]LogTexture:Display: Building textures: bed_v1 (AutoDXT)
+[2015.12.08-16.30.08:924][  0]LogTexture:Display: Building textures: bed_v1_bmp (AutoDXT)
+[2015.12.08-16.30.19:633][  0]LogTexture:Display: Building textures: bed_v1_spec (AutoDXT)
+[2015.12.08-16.30.27:258][  0]LogMaterial: Missing cached shader map for material Bed, compiling. 
+[2015.12.08-16.30.28:161][  0]LogTexture:Display: Building textures: shelf_diffuse (AutoDXT)
+[2015.12.08-16.30.43:945][  0]LogTexture:Display: Building textures: shelf_nm (BC5)
+[2015.12.08-16.30.47:060][  0]LogTexture:Display: Building textures: shelf_spec (AutoDXT)
+[2015.12.08-16.30.56:424][  0]LogMaterial: Missing cached shader map for material BookShelf, compiling. 
+[2015.12.08-16.30.56:487][  0]LogTexture:Display: Building textures: computer_v1 (AutoDXT)
+[2015.12.08-16.30.57:172][  0]LogTexture:Display: Building textures: computer_v1_spec (AutoDXT)
+[2015.12.08-16.30.57:908][  0]LogMaterial: Missing cached shader map for material Computer, compiling. 
+[2015.12.08-16.30.58:044][  0]LogTexture:Display: Building textures: dresser_bmp (AutoDXT)
+[2015.12.08-16.31.00:228][  0]LogTexture:Display: Building textures: dresser_diffuse (AutoDXT)
+[2015.12.08-16.31.02:005][  0]LogTexture:Display: Building textures: dresser_spec (AutoDXT)
+[2015.12.08-16.31.03:847][  0]LogMaterial: Missing cached shader map for material Dresser_Diffuse, compiling. 
+[2015.12.08-16.31.03:867][  0]LogTexture:Display: Building textures: globe_diffuse (AutoDXT)
+[2015.12.08-16.31.04:078][  0]LogMaterial: Missing cached shader map for material Globe, compiling. 
+[2015.12.08-16.31.04:121][  0]LogTexture:Display: Building textures: hanging_shelf_bmp (AutoDXT)
+[2015.12.08-16.31.04:661][  0]LogTexture:Display: Building textures: hanging_shelf_diffuse (AutoDXT)
+[2015.12.08-16.31.05:856][  0]LogTexture:Display: Building textures: hanging_shelf_spec (AutoDXT)
+[2015.12.08-16.31.06:321][  0]LogMaterial: Missing cached shader map for material HangingShelf, compiling. 
+[2015.12.08-16.31.06:443][  0]LogTexture:Display: Building textures: hardwood_diffuse (AutoDXT)
+[2015.12.08-16.31.08:916][  0]LogTexture:Display: Building textures: hardwood_nm (BC5)
+[2015.12.08-16.31.09:510][  0]LogTexture:Display: Building textures: hardwood_spec (AutoDXT)
+[2015.12.08-16.31.10:801][  0]LogMaterial: Missing cached shader map for material HardWood, compiling. 
+[2015.12.08-16.31.10:824][  0]LogTexture:Display: Building textures: lamp_diffuse (AutoDXT)
+[2015.12.08-16.31.11:001][  0]LogMaterial: Missing cached shader map for material Lamp, compiling. 
+[2015.12.08-16.31.11:010][  0]LogMaterial: Missing cached shader map for material Clock_red, compiling. 
+[2015.12.08-16.31.11:145][  0]LogTexture:Display: Building textures: speaker_diffuse (AutoDXT)
+[2015.12.08-16.31.12:096][  0]LogMaterial: Missing cached shader map for material Speaker, compiling. 
+[2015.12.08-16.31.12:203][  0]LogTexture:Display: Building textures: toychest_diffuse (AutoDXT)
+[2015.12.08-16.31.13:382][  0]LogMaterial: Missing cached shader map for material ToyChest, compiling. 
+[2015.12.08-16.31.13:463][  0]LogTexture:Display: Building textures: space_wall (AutoDXT)
+[2015.12.08-16.31.14:389][  0]LogTexture:Display: Building textures: wall-nm (BC5)
+[2015.12.08-16.31.15:022][  0]LogTexture:Display: Building textures: wall-spec (AutoDXT)
+[2015.12.08-16.31.15:840][  0]LogMaterial: Missing cached shader map for material Wall, compiling. 
+[2015.12.08-16.31.15:948][  0]LogTexture:Display: Building textures: whiteboard_diffuse (AutoDXT)
+[2015.12.08-16.31.16:914][  0]LogMaterial: Missing cached shader map for material Whiteboard, compiling. 
+[2015.12.08-16.31.16:926][  0]LogMaterial: Missing cached shader map for material BareWall, compiling. 
+[2015.12.08-16.31.16:972][  0]LogTexture:Display: Building textures: noise (AutoDXT)
+[2015.12.08-16.31.17:889][  0]LogMaterial: Missing cached shader map for material Ceiling, compiling. 
+[2015.12.08-16.31.17:900][  0]LogMaterial: Missing cached shader map for material Clock_Black, compiling. 
+[2015.12.08-16.31.18:084][  0]LogTexture:Display: Building textures: T_Metal_Steel_D (AutoDXT)
+[2015.12.08-16.31.21:277][  0]LogTexture:Display: Building textures: T_Metal_Steel_N (BC5)
+[2015.12.08-16.31.21:883][  0]LogMaterial: Missing cached shader map for material M_Metal_Steel, compiling. 
+[2015.12.08-16.31.22:457][  0]LogTexture:Display: Building textures: Desk_Bump (AutoDXT)
+[2015.12.08-16.31.27:994][  0]LogTexture:Display: Building textures: Desk_Textures (AutoDXT)
+[2015.12.08-16.31.35:387][  0]LogTexture:Display: Building textures: Desk_spec (AutoDXT)
+[2015.12.08-16.31.38:097][  0]LogMaterial: Missing cached shader map for material Desk, compiling. 
+[2015.12.08-16.31.38:620][  0]LogTexture:Display: Building textures: chair_final_bump (AutoDXT)
+[2015.12.08-16.31.44:536][  0]LogTexture:Display: Building textures: chair_diffuse (AutoDXT)
+[2015.12.08-16.31.51:404][  0]LogTexture:Display: Building textures: chair_final_spec (AutoDXT)
+[2015.12.08-16.31.53:966][  0]LogMaterial: Missing cached shader map for material DeskChair, compiling. 
+[2015.12.08-16.31.54:254][  0]LogTexture:Display: Building textures: Door_Bump_24 (AutoDXT)
+[2015.12.08-16.31.57:306][  0]LogTexture:Display: Building textures: Door_diffuse_24th (AutoDXT)
+[2015.12.08-16.32.00:887][  0]LogTexture:Display: Building textures: Door_Spec_24 (AutoDXT)
+[2015.12.08-16.32.03:772][  0]LogMaterial: Missing cached shader map for material Door, compiling. 
+[2015.12.08-16.32.04:016][  0]LogTexture:Display: Building textures: Frame_Bump_24 (AutoDXT)
+[2015.12.08-16.32.06:715][  0]LogTexture:Display: Building textures: Frame_Diffuse_24th (AutoDXT)
+[2015.12.08-16.32.09:667][  0]LogTexture:Display: Building textures: Frame_Spec_24 (AutoDXT)
+[2015.12.08-16.32.11:975][  0]LogMaterial: Missing cached shader map for material DoorFrame, compiling. 
+[2015.12.08-16.32.12:070][  0]LogTexture:Display: Building textures: lamp_bump (AutoDXT)
+[2015.12.08-16.32.13:331][  0]LogTexture:Display: Building textures: lamp_tex (AutoDXT)
+[2015.12.08-16.32.14:870][  0]LogTexture:Display: Building textures: lamp_spec (AutoDXT)
+[2015.12.08-16.32.15:587][  0]LogMaterial: Missing cached shader map for material Lamp, compiling. 
+[2015.12.08-16.32.15:700][  0]LogTexture:Display: Building textures: night_stand_bmp (AutoDXT)
+[2015.12.08-16.32.17:445][  0]LogTexture:Display: Building textures: night_stand_diffuse (AutoDXT)
+[2015.12.08-16.32.20:015][  0]LogTexture:Display: Building textures: night_stand_spec (AutoDXT)
+[2015.12.08-16.32.21:324][  0]LogMaterial: Missing cached shader map for material NightStand, compiling. 
+[2015.12.08-16.32.21:356][  0]LogTexture:Display: Building textures: car_track_bump (AutoDXT)
+[2015.12.08-16.32.22:487][  0]LogTexture:Display: Building textures: car_track_car (AutoDXT)
+[2015.12.08-16.32.23:671][  0]LogTexture:Display: Building textures: car_track_spec (AutoDXT)
+[2015.12.08-16.32.24:538][  0]LogMaterial: Missing cached shader map for material RaceCarTrack, compiling. 
+[2015.12.08-16.32.24:746][  0]LogTexture:Display: Building textures: RockingChair_bump (AutoDXT)
+[2015.12.08-16.32.34:074][  0]LogTexture:Display: Building textures: RockingChair_texture (AutoDXT)
+[2015.12.08-16.32.44:859][  0]LogTexture:Display: Building textures: RockingChair_spec (AutoDXT)
+[2015.12.08-16.32.52:082][  0]LogMaterial: Missing cached shader map for material Rocking_Chair, compiling. 
+[2015.12.08-16.32.52:138][  0]LogTexture:Display: Building textures: wii_bump (AutoDXT)
+[2015.12.08-16.32.54:708][  0]LogTexture:Display: Building textures: Wii_texture (AutoDXT)
+[2015.12.08-16.33.04:487][  0]LogTexture:Display: Building textures: wii_spec (AutoDXT)
+[2015.12.08-16.33.06:630][  0]LogMaterial: Missing cached shader map for material Wii, compiling. 
+[2015.12.08-16.33.06:637][  0]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2015.12.08-16.33.06:660][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Bogeyman_ThemeTeaser...
+[2015.12.08-16.33.07:464][  0]LogMaterial: Missing cached shader map for material BedsideTable, compiling. 
+[2015.12.08-16.33.07:477][  0]LogStaticMesh: Building static mesh baseball_bat...
+[2015.12.08-16.33.07:491][  0]LogStaticMesh: Built static mesh [14.025994ms] /Game/Meshes/Fabian/baseball_bat.baseball_bat
+[2015.12.08-16.33.07:500][  0]LogStaticMesh: Building static mesh bed...
+[2015.12.08-16.33.07:732][  0]LogStaticMesh: Built static mesh [232.264359ms] /Game/Meshes/Fabian/bed.bed
+[2015.12.08-16.33.07:881][  0]LogTexture:Display: Building textures: closet_door_bmp (AutoDXT)
+[2015.12.08-16.33.09:759][  0]LogStaticMesh: Building static mesh closet_bar...
+[2015.12.08-16.33.09:762][  0]LogStaticMesh: Built static mesh [2.925723ms] /Game/Meshes/Fabian/closet_bar.closet_bar
+[2015.12.08-16.33.09:764][  0]LogStaticMesh: Building static mesh Dresser...
+[2015.12.08-16.33.09:902][  0]LogStaticMesh: Built static mesh [138.700165ms] /Game/Meshes/Fabian/Dresser.Dresser
+[2015.12.08-16.33.10:137][  0]LogTexture:Display: Building textures: closet_door_diffuse (AutoDXT)
+[2015.12.08-16.33.13:626][  0]LogTexture:Display: Building textures: closet_door_spec (AutoDXT)
+[2015.12.08-16.33.15:522][  0]LogMaterial: Missing cached shader map for material ClosetDoor, compiling. 
+[2015.12.08-16.33.15:539][  0]LogStaticMesh: Building static mesh closet_door...
+[2015.12.08-16.33.15:562][  0]LogStaticMesh: Built static mesh [23.479977ms] /Game/Meshes/Fabian/closet_door.closet_door
+[2015.12.08-16.33.15:564][  0]LogStaticMesh: Building static mesh computer...
+[2015.12.08-16.33.16:131][  0]LogStaticMesh: Built static mesh [566.778015ms] /Game/Meshes/Fabian/computer.computer
+[2015.12.08-16.33.16:240][  0]LogStaticMesh: Building static mesh globe...
+[2015.12.08-16.33.16:274][  0]LogStaticMesh: Built static mesh [34.497845ms] /Game/Meshes/Fabian/globe.globe
+[2015.12.08-16.33.16:282][  0]LogStaticMesh: Building static mesh garbage_cabn...
+[2015.12.08-16.33.16:295][  0]LogStaticMesh: Built static mesh [13.158863ms] /Game/Meshes/Fabian/garbage_cabn.garbage_cabn
+[2015.12.08-16.33.16:300][  0]LogStaticMesh: Building static mesh lamp...
+[2015.12.08-16.33.16:331][  0]LogStaticMesh: Built static mesh [30.715841ms] /Game/Meshes/Fabian/lamp.lamp
+[2015.12.08-16.33.16:653][  0]LogTexture:Display: Building textures: Clown_CM (AutoDXT)
+[2015.12.08-16.33.19:237][  0]LogTexture:Display: Building textures: Clown_SM (AutoDXT)
+[2015.12.08-16.33.21:681][  0]LogTexture:Display: Building textures: Clown_Textures (AutoDXT)
+[2015.12.08-16.33.23:235][  0]LogMaterial: Missing cached shader map for material Clown, compiling. 
+[2015.12.08-16.33.23:255][  0]LogMaterial: Missing cached shader map for material RS_Woman_initialShadingGroup1, compiling. 
+[2015.12.08-16.33.23:273][  0]LogMaterial: Missing cached shader map for material lambert2, compiling. 
+[2015.12.08-16.33.23:446][  0]LogTexture:Display: Building textures: books_diffuse (AutoDXT)
+[2015.12.08-16.33.25:059][  0]LogTexture:Display: Building textures: books_spec (AutoDXT)
+[2015.12.08-16.33.26:271][  0]LogTexture:Display: Building textures: books_bump (AutoDXT)
+[2015.12.08-16.33.27:382][  0]LogMaterial: Missing cached shader map for material Books, compiling. 
+[2015.12.08-16.33.27:528][  0]LogTexture:Display: Building textures: Teddy_CM (AutoDXT)
+[2015.12.08-16.33.30:838][  0]LogTexture:Display: Building textures: Teddy_NM (BC5)
+[2015.12.08-16.33.31:338][  0]LogTexture:Display: Building textures: Teddy_SM (AutoDXT)
+[2015.12.08-16.33.31:932][  0]LogMaterial: Missing cached shader map for material Teddy, compiling. 
+[2015.12.08-16.33.32:002][  0]LogTexture:Display: Building textures: wii_cases_disk_spec (AutoDXT)
+[2015.12.08-16.33.32:646][  0]LogStaticMesh: Building static mesh book_1...
+[2015.12.08-16.33.32:658][  0]LogStaticMesh: Built static mesh [12.105521ms] /Game/Meshes/Lucas/Books/book_1.book_1
+[2015.12.08-16.33.32:660][  0]LogStaticMesh: Building static mesh Car_Track_Non_Moving_Dec3...
+[2015.12.08-16.33.32:776][  0]LogStaticMesh: Built static mesh [116.116638ms] /Game/Meshes/Lucas/Car_Track_Non_Moving_Dec3.Car_Track_Non_Moving_Dec3
+[2015.12.08-16.33.32:992][  0]LogTexture:Display: Building textures: wii_cases_disk (AutoDXT)
+[2015.12.08-16.33.34:852][  0]LogMaterial: Missing cached shader map for material ClosedWiiCase, compiling. 
+[2015.12.08-16.33.34:860][  0]LogStaticMesh: Building static mesh Wii_case_1_LK...
+[2015.12.08-16.33.34:863][  0]LogStaticMesh: Built static mesh [3.384361ms] /Game/Meshes/Lucas/Closed_Wii_Cases/Wii_case_1_LK.Wii_case_1_LK
+[2015.12.08-16.33.34:869][  0]LogStaticMesh: Building static mesh Wii_case_2_LK...
+[2015.12.08-16.33.34:874][  0]LogStaticMesh: Built static mesh [5.512453ms] /Game/Meshes/Lucas/Closed_Wii_Cases/Wii_case_2_LK.Wii_case_2_LK
+[2015.12.08-16.33.34:876][  0]LogStaticMesh: Building static mesh Desk_Chair_LK...
+[2015.12.08-16.33.35:430][  0]LogStaticMesh: Built static mesh [554.945496ms] /Game/Meshes/Lucas/Desk_Chair_LK.Desk_Chair_LK
+[2015.12.08-16.33.35:551][  0]LogStaticMesh: Building static mesh Desk_Lamp_LK...
+[2015.12.08-16.33.35:687][  0]LogStaticMesh: Built static mesh [135.701706ms] /Game/Meshes/Lucas/Desk_Lamp_LK.Desk_Lamp_LK
+[2015.12.08-16.33.35:711][  0]LogStaticMesh: Building static mesh Desk_LK...
+[2015.12.08-16.33.35:810][  0]LogStaticMesh: Built static mesh [100.074280ms] /Game/Meshes/Lucas/Desk_LK.Desk_LK
+[2015.12.08-16.33.35:827][  0]LogStaticMesh: Building static mesh Disk_LK...
+[2015.12.08-16.33.35:832][  0]LogStaticMesh: Built static mesh [5.432690ms] /Game/Meshes/Lucas/Disk_LK.Disk_LK
+[2015.12.08-16.33.35:833][  0]LogStaticMesh: Building static mesh Door_and_Bits...
+[2015.12.08-16.33.35:874][  0]LogStaticMesh: Built static mesh [40.528465ms] /Game/Meshes/Lucas/Door_and_Bits.Door_and_Bits
+[2015.12.08-16.33.35:884][  0]LogStaticMesh: Building static mesh Frame_Door...
+[2015.12.08-16.33.35:888][  0]LogStaticMesh: Built static mesh [4.505444ms] /Game/Meshes/Lucas/Frame_Door.Frame_Door
+[2015.12.08-16.33.35:892][  0]LogStaticMesh: Building static mesh Marker_LK...
+[2015.12.08-16.33.35:951][  0]LogStaticMesh: Built static mesh [59.480713ms] /Game/Meshes/Lucas/Marker_LK.Marker_LK
+[2015.12.08-16.33.35:957][  0]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2015.12.08-16.33.35:964][  0]LogStaticMesh: Building static mesh Open_Case_LK...
+[2015.12.08-16.33.35:990][  0]LogStaticMesh: Built static mesh [26.028292ms] /Game/Meshes/Lucas/Open_Case_LK.Open_Case_LK
+[2015.12.08-16.33.35:993][  0]LogStaticMesh: Building static mesh Pen_Holder_LK...
+[2015.12.08-16.33.36:163][  0]LogStaticMesh: Built static mesh [169.861145ms] /Game/Meshes/Lucas/Pen_Holder_LK.Pen_Holder_LK
+[2015.12.08-16.33.36:179][  0]LogStaticMesh: Building static mesh Pen_LK...
+[2015.12.08-16.33.36:200][  0]LogStaticMesh: Built static mesh [21.288250ms] /Game/Meshes/Lucas/Pen_LK.Pen_LK
+[2015.12.08-16.33.36:202][  0]LogStaticMesh: Building static mesh Pencil_Crayon_LK...
+[2015.12.08-16.33.36:212][  0]LogStaticMesh: Built static mesh [10.773887ms] /Game/Meshes/Lucas/Pencil_Crayon_LK.Pencil_Crayon_LK
+[2015.12.08-16.33.36:214][  0]LogStaticMesh: Building static mesh Pencil_LK...
+[2015.12.08-16.33.36:223][  0]LogStaticMesh: Built static mesh [9.942533ms] /Game/Meshes/Lucas/Pencil_LK.Pencil_LK
+[2015.12.08-16.33.36:225][  0]LogStaticMesh: Building static mesh Rocking_Chair_LK...
+[2015.12.08-16.33.36:311][  0]LogStaticMesh: Built static mesh [86.166466ms] /Game/Meshes/Lucas/Rocking_Chair_LK.Rocking_Chair_LK
+[2015.12.08-16.33.36:332][  0]LogMaterial: Missing cached shader map for material polySurface201_TV_combinedMat, compiling. 
+[2015.12.08-16.33.36:347][  0]LogMaterial: Missing cached shader map for material polySurface200_TV_combinedMat, compiling. 
+[2015.12.08-16.33.36:393][  0]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2015.12.08-16.33.36:446][  0]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2015.12.08-16.33.37:350][  0]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT)
+[2015.12.08-16.33.37:398][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2015.12.08-16.33.37:414][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1)
+[2015.12.08-16.33.37:469][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
+[2015.12.08-16.33.37:992][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_4 (BGRA8)
+[2015.12.08-16.33.37:998][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_5 (BGRA8)
+[2015.12.08-16.33.38:110][  0]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2015.12.08-16.33.38:532][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.12.08-16.33.38:533][  0]LogAIModule: Creating AISystem for world Room
+[2015.12.08-16.33.38:534][  0]Cmd: MAP CHECKDEP
+[2015.12.08-16.33.38:534][  0]MapCheck: New page: Room - Dec 8, 2015, 12:33:38 AM
+[2015.12.08-16.33.38:748][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 214.573ms to complete.
+[2015.12.08-16.33.38:748][  0]LogFileHelpers: Loading map 'Room' took 277.317
+[2015.12.08-16.33.38:893][  0]LogCollectionManager: Loaded 0 collections in 0.001899 seconds
+[2015.12.08-16.33.38:907][  0]LogContentBrowser: Native class hierarchy populated in 0.0131 seconds. Added 1698 classes and 263 folders.
+[2015.12.08-16.33.38:943][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0039 seconds. Added 1 classes and 2 folders.
+[2015.12.08-16.33.39:004][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.12.08-16.33.39:005][  0]LogSlate:Warning: Failed to load font data from 'Veranda'
+[2015.12.08-16.33.39:040][  0]LogLoad: Full Startup: 289.77 seconds (BP compile: 2.95 seconds)
+[2015.12.08-16.33.39:054][  0]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Materials'
+[2015.12.08-16.33.39:186][  0]LogRenderer:Warning: Reallocating scene render targets to support 32x32 (Frame:2).
+[2015.12.08-16.33.39:265][  0]LogRenderer:Warning: Reallocating scene render targets to support 616x288 (Frame:15).
+[2015.12.08-16.33.39:619][  1]LogMaterial: Missing cached shader map for material Material_0, compiling. 
+[2015.12.08-16.33.39:645][  1]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2015.12.08-16.33.39:718][  2]LogMaterial: Missing cached shader map for material Material_1, compiling. 
+[2015.12.08-16.33.39:718][  2]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Material_1 for platform PCD3D_SM5, Default Material will be used in game.
+[2015.12.08-16.33.39:718][  2]LogMaterial:Warning: 	SceneTexture expressions cannot be used in opaque materials
+[2015.12.08-16.33.39:728][  2]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2015.12.08-16.33.39:768][  3]LogMaterial: Missing cached shader map for material Material_2, compiling. 
+[2015.12.08-16.33.39:781][  3]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2015.12.08-16.33.39:891][  6]LogAssetRegistry: Asset discovery search completed in 279.8653 seconds
+[2015.12.08-16.35.00:195][ 42]LogRenderer:Warning: Reallocating scene render targets to support 728x344 (Frame:11569).
+[2015.12.08-16.35.00:258][ 43]LogRenderer:Warning: Reallocating scene render targets to support 1032x488 (Frame:11571).
+[2015.12.08-16.35.00:318][ 44]LogRenderer:Warning: Reallocating scene render targets to support 1232x576 (Frame:11574).
+[2015.12.08-16.43.39:121][450]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-16.43.39:764][450]LogSavePackage: Save=624.862549ms
+[2015.12.08-16.43.39:765][450]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto1CF20DAAD42B7F487EA24FDA5E8BA36F8.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto1.umap'
+[2015.12.08-16.43.39:776][450]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.848
+[2015.12.08-16.43.39:776][450]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.848
+[2015.12.08-16.47.25:226][901]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/UEDPCRoom.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=true
+[2015.12.08-16.47.25:808][901]LogSavePackage: Save=578.091492ms
+[2015.12.08-16.47.25:808][901]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/UEDPCRoomEF04C2AD40B9547D8CA0A1A880C16252.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/UEDPCRoom.umap'
+[2015.12.08-16.51.03:380][905]LogEditorViewport: Clicking on Actor (LMB): ChildPawn_C (ChildPawn)
+[2015.12.08-16.51.05:466][148]LogEditorViewport: Clicking on Actor (LMB): ChildPawn_C (ChildPawn)
+[2015.12.08-16.51.08:284][440]LogEditorViewport: Clicking on Actor (LMB): FlickeringLight_C (FlickeringLight)
+[2015.12.08-16.51.41:174][227]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.12.08-16.51.43:556][501]LogEditorViewport: Clicking on Actor (LMB): PostProcessVolume (PostProcessVolume)
+[2015.12.08-16.51.48:465][ 64]Cmd: DELETE
+[2015.12.08-16.51.48:465][ 64]Cmd: ACTOR DELETE
+[2015.12.08-16.51.48:467][ 64]LogEditorActor: Deleted Actor: PostProcessVolume
+[2015.12.08-16.51.48:511][ 64]LogEditorActor: Deleted 1 Actors (0.046 secs)
+[2015.12.08-16.52.03:531][815]Cmd: TRANSACTION UNDO
+[2015.12.08-16.52.03:531][815]LogEditorTransaction: Undo Clicking on Actors
+[2015.12.08-16.52.04:636][894]Cmd: TRANSACTION UNDO
+[2015.12.08-16.52.04:636][894]LogEditorTransaction: Undo Clicking on Actors
+[2015.12.08-16.52.05:215][958]Cmd: TRANSACTION UNDO
+[2015.12.08-16.52.05:215][958]LogEditorTransaction: Undo Clicking on Actors
+[2015.12.08-16.52.06:459][106]Cmd: TRANSACTION UNDO
+[2015.12.08-16.52.06:459][106]LogEditorTransaction: Undo Delete Actors
+[2015.12.08-16.53.24:891][744]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (MoonLight)
+[2015.12.08-16.53.26:023][868]Cmd: DELETE
+[2015.12.08-16.53.26:023][868]Cmd: ACTOR DELETE
+[2015.12.08-16.53.26:024][868]LogEditorActor: Deleted Actor: DirectionalLight
+[2015.12.08-16.53.26:054][868]LogEditorActor: Deleted 1 Actors (0.031 secs)
+[2015.12.08-16.53.42:781][717]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.12.08-16.53.42:849][717]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-16.53.43:367][717]LogSavePackage: Save=505.311737ms
+[2015.12.08-16.53.43:367][717]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto2B43A76AD409A27D548E102B2F54ED154.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto2.umap'
+[2015.12.08-16.53.43:372][717]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.591
+[2015.12.08-16.53.43:372][717]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.591
+[2015.12.08-16.59.25:010][951]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game'
+[2015.12.08-17.00.52:413][414]BlueprintLog: New page: Compile BP_Sky_Sphere
+[2015.12.08-17.00.52:521][414]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.12.08-17.00.52:521][414]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2015.12.08-17.00.52:521][414]LogActorComponent: UnregisterComponent: (/Engine/Transient.LightDetection_1) Not registered. Aborting.
+[2015.12.08-17.00.52:521][414]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2015.12.08-17.00.52:521][414]LogActorComponent: UnregisterComponent: (/Engine/Transient.MovementComponent0) Not registered. Aborting.
+[2015.12.08-17.00.52:580][414]BlueprintEditorCompileResults: Info [1923.39] Compile of BP_Sky_Sphere successful! [in 166 ms]
+[2015.12.08-17.01.59:770][250]BlueprintLog: New page: Compile BP_Sky_Sphere
+[2015.12.08-17.01.59:961][250]BlueprintEditorCompileResults: Info [1990.77] Compile of BP_Sky_Sphere successful! [in 191 ms]
+[2015.12.08-17.03.44:269][741]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto3.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-17.03.44:855][741]LogSavePackage: Save=577.057190ms
+[2015.12.08-17.03.44:855][741]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto3FC391F3F43BEC4BDE7AC92A750099F29.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto3.umap'
+[2015.12.08-17.03.44:862][741]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.674
+[2015.12.08-17.03.44:862][741]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.674
+[2015.12.08-17.03.44:896][741]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BP_Sky_Sphere] ([1] browsable assets)...
+[2015.12.08-17.03.44:933][741]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BP_Sky_Sphere.BP_Sky_Sphere]
+[2015.12.08-17.03.44:933][741]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_Sky_Sphere]
+[2015.12.08-17.03.44:934][741]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/BP_Sky_Sphere_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2015.12.08-17.03.45:509][741]LogSavePackage: Save=569.468872ms
+[2015.12.08-17.03.45:510][741]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_Sphere_Auto31B4560B845B20979DFDDD78755CF615F.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/BP_Sky_Sphere_Auto3.uasset'
+[2015.12.08-17.03.45:549][741]LogFileHelpers: Auto-saving content packages took 0.687
+[2015.12.08-17.04.39:538][431]BlueprintLog: New page: Compile BP_Sky_Sphere
+[2015.12.08-17.04.39:668][431]BlueprintEditorCompileResults: Info [2150.49] Compile of BP_Sky_Sphere successful! [in 130 ms]
+[2015.12.08-17.06.08:087][463]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0087 seconds. Added 1 classes and 2 folders.
+[2015.12.08-17.06.45:112][673]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.06.45:136][673]LogActorComponent: UnregisterComponent: (/Engine/Transient.SkeletalMeshComponent_2) Not registered. Aborting.
+[2015.12.08-17.06.45:222][673]LogActorComponent: UnregisterComponent: (/Engine/Transient.SkeletalMeshComponent_2) Not registered. Aborting.
+[2015.12.08-17.06.45:222][673]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.MaterialEditorMeshComponent_0) Already registered. Aborting.
+[2015.12.08-17.06.45:228][673]LogActorComponent: UnregisterComponent: (/Engine/Transient.SkeletalMeshComponent_2) Not registered. Aborting.
+[2015.12.08-17.06.45:228][673]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.MaterialEditorMeshComponent_0) Already registered. Aborting.
+[2015.12.08-17.06.45:251][673]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.06.45:253][673]LogMaterial: 0.000021 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.06.45:275][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_12, compiling. 
+[2015.12.08-17.06.45:278][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_13, compiling. 
+[2015.12.08-17.06.45:281][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_14, compiling. 
+[2015.12.08-17.06.45:284][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_15, compiling. 
+[2015.12.08-17.06.45:287][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_3, compiling. 
+[2015.12.08-17.06.45:290][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_16, compiling. 
+[2015.12.08-17.06.45:293][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_17, compiling. 
+[2015.12.08-17.06.45:295][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_7, compiling. 
+[2015.12.08-17.06.45:297][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.12.08-17.06.45:299][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_8, compiling. 
+[2015.12.08-17.06.45:302][673]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.12.08-17.06.45:872][723]MaterialEditorStats: Info Base pass shader without light map: 74 instructions
+[2015.12.08-17.06.45:872][723]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.06.45:872][723]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.12.08-17.07.12:599][238]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.07.12:603][238]LogMaterial: 0.000068 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.07.12:627][238]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.12.08-17.07.13:215][302]MaterialEditorStats: Info Base pass shader without light map: 74 instructions
+[2015.12.08-17.07.13:215][302]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.07.13:215][302]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.12.08-17.07.40:022][115]LogEditorTransaction: Undo Edit Texture
+[2015.12.08-17.07.40:023][115]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.07.40:082][115]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.07.40:085][115]LogMaterial: 0.000040 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.07.40:109][115]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.12.08-17.07.40:576][126]MaterialEditorStats: Info Base pass shader without light map: 74 instructions
+[2015.12.08-17.07.40:576][126]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.07.40:576][126]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.12.08-17.07.54:239][471]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.07.54:244][471]LogMaterial: 0.000101 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.07.54:267][471]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.12.08-17.07.54:448][483]MaterialEditorStats: Info Base pass shader without light map: 74 instructions
+[2015.12.08-17.07.54:448][483]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.07.54:448][483]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.12.08-17.08.01:895][215]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.08.01:897][215]LogMaterial: 0.000067 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.08.01:918][215]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_8, compiling. 
+[2015.12.08-17.08.02:102][226]MaterialEditorStats: Info Base pass shader without light map: 74 instructions
+[2015.12.08-17.08.02:102][226]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.08.02:102][226]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.12.08-17.08.20:257][966]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.08.20:261][966]LogMaterial: 0.000114 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.08.20:284][966]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_7, compiling. 
+[2015.12.08-17.08.20:515][986]MaterialEditorStats: Info Base pass shader without light map: 74 instructions
+[2015.12.08-17.08.20:515][986]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.08.20:515][986]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.12.08-17.09.02:001][367]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.09.02:006][367]LogMaterial: 0.000093 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.09.02:031][367]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.12.08-17.09.02:586][429]MaterialEditorStats: Info Base pass shader without light map: 74 instructions
+[2015.12.08-17.09.02:586][429]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.09.02:586][429]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.12.08-17.09.05:636][666]BlueprintLog: New page: Compile BP_Sky_Sphere
+[2015.12.08-17.09.05:784][666]BlueprintEditorCompileResults: Info [2416.62] Compile of BP_Sky_Sphere successful! [in 147 ms]
+[2015.12.08-17.09.08:173][885]LogMaterialEditor: Saving and Compiling material M_Sky_Panning_Clouds2
+[2015.12.08-17.09.09:666][885]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.09.09:671][885]LogMaterial: 0.000084 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.12.08-17.09.09:725][885]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.09.09:731][885]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2015.12.08-17.09.09:740][885]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2015.12.08-17.09.09:751][885]LogMaterial: 0.017600 seconds spent updating 1 materials, 1 interfaces, 8 instances, 0 with static permutations.
+[2015.12.08-17.09.10:079][885]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/M_Sky_Panning_Clouds2" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/M_Sky_Panning_Clouds2.uasset" SILENT=true
+[2015.12.08-17.09.10:405][885]LogSavePackage: Save=322.045380ms
+[2015.12.08-17.09.10:405][885]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/M_Sky_Panning_Clouds21F6CD2F1400B780FE9A3DA840D8D0F71.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/M_Sky_Panning_Clouds2.uasset'
+[2015.12.08-17.09.10:421][885]MaterialEditorStats: Info Base pass shader without light map: 98 instructions
+[2015.12.08-17.09.10:421][885]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.12.08-17.09.10:421][885]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.12.08-17.12.42:905][140]BlueprintLog: New page: Compile BP_Sky_Sphere
+[2015.12.08-17.12.43:041][140]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000B5365C0
+[2015.12.08-17.12.43:060][140]BlueprintEditorCompileResults: Info [2633.90] Compile of BP_Sky_Sphere successful! [in 154 ms]
+[2015.12.08-17.13.00:738][533]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-17.13.01:203][533]LogSavePackage: Save=451.213257ms
+[2015.12.08-17.13.01:203][533]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_Sphere25864A86494DFE70E1700E932C092C26.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/BP_Sky_Sphere.uasset'
+[2015.12.08-17.13.03:861][782]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2015.12.08-17.13.04:523][782]LogSavePackage: Save=609.224915ms
+[2015.12.08-17.13.04:523][782]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/RoomBA9AD89E4E333D33880405B910F9CA92.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap'
+[2015.12.08-17.13.19:483][800]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game'
+[2015.12.08-17.13.25:369][352]LogWmfMedia:Error: Failed to create source object from URL for C:/Users/339117/Downloads/baby_goats_83/Baby_goats.mp4
+[2015.12.08-17.13.27:918][521]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Video/Baby_goats" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Video/Baby_goats.uasset" SILENT=true
+[2015.12.08-17.13.27:922][521]LogSavePackage: Save=1.935136ms
+[2015.12.08-17.13.27:922][521]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Baby_goats0C371B56472A49B6057C0D8AC52D1F83.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Video/Baby_goats.uasset'
+[2015.12.08-17.13.28:267][521]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Baby_goats_Tex" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Baby_goats_Tex.uasset" SILENT=true
+[2015.12.08-17.13.28:288][521]LogSavePackage: Save=12.779402ms
+[2015.12.08-17.13.28:288][521]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Baby_goats_TexEB482D924FCE5C18D3C4DABF29DD9FF7.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Baby_goats_Tex.uasset'
+[2015.12.08-17.13.31:608][795]LogMaterial: Missing cached shader map for material Baby_goats_Tex_Mat, compiling. 
+[2015.12.08-17.13.31:776][795]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Video/Baby_goats_Tex" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Video/Baby_goats_Tex.uasset" SILENT=true
+[2015.12.08-17.13.31:785][795]LogSavePackage: Save=7.799778ms
+[2015.12.08-17.13.31:785][795]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Baby_goats_TexB5B0F910490D1C4092FE11BCE92CE558.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Video/Baby_goats_Tex.uasset'
+[2015.12.08-17.13.33:259][795]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Baby_goats_Tex_Mat" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Baby_goats_Tex_Mat.uasset" SILENT=true
+[2015.12.08-17.13.33:492][795]LogSavePackage: Save=222.025360ms
+[2015.12.08-17.13.33:492][795]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Baby_goats_Tex_MatF1368E7E4831E3B2D7A845AE79993A40.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Baby_goats_Tex_Mat.uasset'
+[2015.12.08-17.13.38:860][300]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Video/Baby_goats_Tex_Mat" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Video/Baby_goats_Tex_Mat.uasset" SILENT=true
+[2015.12.08-17.13.39:095][300]LogSavePackage: Save=230.960297ms
+[2015.12.08-17.13.39:095][300]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Baby_goats_Tex_MatDA29D835467676ABBA6318982D20C39A.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Video/Baby_goats_Tex_Mat.uasset'
+[2015.12.08-17.13.42:311][545]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game'
+[2015.12.08-17.14.00:368][350]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Character'
+[2015.12.08-17.14.11:876][581]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Blueprints'
+[2015.12.08-17.14.22:977][648]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.12.08-17.14.22:978][648]LogActorComponent: UnregisterComponent: (/Engine/Transient.LightDetection_1) Not registered. Aborting.
+[2015.12.08-17.14.23:040][648]LogMetaData: Removing '/Game/Sky/BP_Sky_Sphere.BP_Sky_Sphere_C' ref from Metadata '/Game/BP_Sky_Sphere.PackageMetaData'
+[2015.12.08-17.14.23:040][648]LogMetaData: Removing '/Game/Sky/BP_Sky_Sphere.SKEL_BP_Sky_Sphere_C' ref from Metadata '/Game/BP_Sky_Sphere.PackageMetaData'
+[2015.12.08-17.14.23:136][648]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-17.14.23:592][648]LogSavePackage: Save=453.596191ms
+[2015.12.08-17.14.23:592][648]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_SphereFE19B6854BC67AB3A9B942A31922B00B.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset'
+[2015.12.08-17.14.26:528][853]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/C_Sky_Cloud_Color" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/C_Sky_Cloud_Color.uasset" SILENT=true
+[2015.12.08-17.14.26:534][853]LogSavePackage: Save=4.127155ms
+[2015.12.08-17.14.26:534][853]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/C_Sky_Cloud_ColorDB0513EA4CB0D6F04566C0A6EF5F588B.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/C_Sky_Cloud_Color.uasset'
+[2015.12.08-17.14.26:865][853]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-17.14.27:124][853]LogSavePackage: Save=248.504074ms
+[2015.12.08-17.14.27:124][853]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_SphereFF56CEDC42C91B46325FCC8E44625FDE.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset'
+[2015.12.08-17.14.29:733][ 55]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/C_Sky_Horizon_Color" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/C_Sky_Horizon_Color.uasset" SILENT=true
+[2015.12.08-17.14.29:742][ 55]LogSavePackage: Save=2.785845ms
+[2015.12.08-17.14.29:742][ 55]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/C_Sky_Horizon_Color7AF146E14B5C4F39088080B21102A638.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/C_Sky_Horizon_Color.uasset'
+[2015.12.08-17.14.30:068][ 55]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-17.14.30:371][ 55]LogSavePackage: Save=292.009583ms
+[2015.12.08-17.14.30:371][ 55]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_Sphere0E23030C4513A28F41F547A418B2FF20.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset'
+[2015.12.08-17.14.32:952][262]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/C_Sky_Zenith_Color" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/C_Sky_Zenith_Color.uasset" SILENT=true
+[2015.12.08-17.14.32:961][262]LogSavePackage: Save=2.024576ms
+[2015.12.08-17.14.32:961][262]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/C_Sky_Zenith_Color821139F54CD01D3430C320B8A42E709B.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/C_Sky_Zenith_Color.uasset'
+[2015.12.08-17.14.33:287][262]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-17.14.33:594][262]LogSavePackage: Save=295.113892ms
+[2015.12.08-17.14.33:594][262]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_Sphere5DB411DF45AD2CDB3828D8AFC081B498.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset'
+[2015.12.08-17.14.35:817][435]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/M_Sky_Panning_Clouds2" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset" SILENT=true
+[2015.12.08-17.14.36:158][435]LogSavePackage: Save=338.139954ms
+[2015.12.08-17.14.36:158][435]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/M_Sky_Panning_Clouds2FB7650C24063BFBDFCD1AFBE2059A990.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset'
+[2015.12.08-17.14.36:473][435]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-17.14.36:783][435]LogSavePackage: Save=303.539154ms
+[2015.12.08-17.14.36:783][435]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_Sphere7D8ABB354B7C22BACB0186A85F87E963.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset'
+[2015.12.08-17.14.39:489][661]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/M_Sky_Panning_Clouds2_Inst" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2_Inst.uasset" SILENT=true
+[2015.12.08-17.14.39:807][661]LogSavePackage: Save=316.795105ms
+[2015.12.08-17.14.39:807][661]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/M_Sky_Panning_Clouds2_InstB9A620D34D8C7FDEB3A870B8F046F15D.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2_Inst.uasset'
+[2015.12.08-17.14.42:624][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/SM_SkySphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/SM_SkySphere.uasset" SILENT=true
+[2015.12.08-17.14.42:834][878]LogSavePackage: Save=205.999130ms
+[2015.12.08-17.14.42:834][878]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/SM_SkySphereD0D615ED47E238F3B2A410B8E85AF740.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/SM_SkySphere.uasset'
+[2015.12.08-17.14.43:164][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-17.14.43:447][878]LogSavePackage: Save=274.129456ms
+[2015.12.08-17.14.43:447][878]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_Sphere8D1FBF2E4B49DC9DDCB5A2B4C8C1302C.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset'
+[2015.12.08-17.14.48:187][309]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/T_Sky_Blue" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/T_Sky_Blue.uasset" SILENT=true
+[2015.12.08-17.14.48:531][309]LogSavePackage: Save=341.974152ms
+[2015.12.08-17.14.48:531][309]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/T_Sky_BlueF54DF1F24E0098C80CBD6EAAEE7ACC7C.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/T_Sky_Blue.uasset'
+[2015.12.08-17.14.48:853][309]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/M_Sky_Panning_Clouds2" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset" SILENT=true
+[2015.12.08-17.14.48:903][309]LogSavePackage: Save=37.463158ms
+[2015.12.08-17.14.48:903][309]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/M_Sky_Panning_Clouds288865C414B2ADF1B5899B495676A5F61.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset'
+[2015.12.08-17.14.51:367][497]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/T_Sky_Clouds_M" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/T_Sky_Clouds_M.uasset" SILENT=true
+[2015.12.08-17.14.51:531][497]LogSavePackage: Save=160.446167ms
+[2015.12.08-17.14.51:531][497]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/T_Sky_Clouds_MA4A901134833CD66BF3A019AA1504EDB.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/T_Sky_Clouds_M.uasset'
+[2015.12.08-17.14.51:873][497]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/M_Sky_Panning_Clouds2" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset" SILENT=true
+[2015.12.08-17.14.51:913][497]LogSavePackage: Save=28.545816ms
+[2015.12.08-17.14.51:913][497]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/M_Sky_Panning_Clouds2C93A92DD4C6CB2F78B89F7A5CEC56AEA.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset'
+[2015.12.08-17.14.56:443][933]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/T_Sky_Stars" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/T_Sky_Stars.uasset" SILENT=true
+[2015.12.08-17.14.56:574][933]LogSavePackage: Save=127.008118ms
+[2015.12.08-17.14.56:574][933]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/T_Sky_Stars6FD11B8F4E0793AABC309BBBFD4BA10A.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/T_Sky_Stars.uasset'
+[2015.12.08-17.14.56:911][933]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/M_Sky_Panning_Clouds2" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset" SILENT=true
+[2015.12.08-17.14.56:951][933]LogSavePackage: Save=28.759886ms
+[2015.12.08-17.14.56:951][933]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/M_Sky_Panning_Clouds2E0E9E0044321AC6822EEF0A0C86812A5.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/M_Sky_Panning_Clouds2.uasset'
+[2015.12.08-17.14.58:780][129]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Sky'
+[2015.12.08-17.19.12:225][128]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Sky'
+[2015.12.08-17.19.26:264][592]LogLinker:Warning: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.26:264][592]LogLinker: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.26:265][592]LogLinker:Warning: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.26:265][592]LogLinker: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.26:943][653]LogLinker:Warning: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.26:943][653]LogLinker: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.26:944][653]LogLinker:Warning: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.26:944][653]LogLinker: Can't find file '/Game/Sky/DayNightCycle'
+[2015.12.08-17.19.38:123][862]LogRenderer:Warning: Reallocating scene render targets to support 1232x712 (Frame:167000).
+[2015.12.08-17.23.04:495][321]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto4.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-17.23.05:059][321]LogSavePackage: Save=550.762329ms
+[2015.12.08-17.23.05:059][321]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto456B46A68473876E99EDE9B960C8BB87A.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto4.umap'
+[2015.12.08-17.23.05:066][321]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.653
+[2015.12.08-17.23.05:066][321]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.653
+[2015.12.08-17.23.05:097][321]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Sky/DayNightCycle] ([1] browsable assets)...
+[2015.12.08-17.23.05:097][321]OBJ SavePackage: Finished generating thumbnails for package [/Game/Sky/DayNightCycle]
+[2015.12.08-17.23.05:107][321]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/DayNightCycle" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2015.12.08-17.23.05:185][321]LogSavePackage: Save=76.149155ms
+[2015.12.08-17.23.05:186][321]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/DayNightCycle_Auto445B6704842BD6D9DA6B537910F90A0A1.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto4.uasset'
+[2015.12.08-17.23.05:194][321]LogFileHelpers: Auto-saving content packages took 0.128
+[2015.12.08-17.25.23:364][ 99]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-17.25.23:538][ 99]BlueprintEditorCompileResults: Info [3394.42] Compile of DayNightCycle successful! [in 173 ms]
+[2015.12.08-17.25.24:705][231]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/DayNightCycle" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/DayNightCycle.uasset" SILENT=true
+[2015.12.08-17.25.24:726][231]LogSavePackage: Save=19.159573ms
+[2015.12.08-17.25.24:726][231]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/DayNightCycle65C6BD3449DC49C6C091D0B3537A61C1.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/DayNightCycle.uasset'
+[2015.12.08-17.25.48:835][312]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-17.25.48:964][312]BlueprintEditorCompileResults: Info [3419.85] Compile of DayNightCycle successful! [in 128 ms]
+[2015.12.08-17.31.42:364][505]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-17.31.42:512][505]BlueprintEditorCompileResults: Info [3773.41] Compile of DayNightCycle successful! [in 147 ms]
+[2015.12.08-17.33.05:932][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto5.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-17.33.06:573][736]LogSavePackage: Save=630.716370ms
+[2015.12.08-17.33.06:573][736]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto52F71E7DD4553FF94D89B45AE3C99FAE2.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto5.umap'
+[2015.12.08-17.33.06:580][736]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.729
+[2015.12.08-17.33.06:580][736]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.729
+[2015.12.08-17.33.06:614][736]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Sky/DayNightCycle] ([1] browsable assets)...
+[2015.12.08-17.33.06:614][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/Sky/DayNightCycle]
+[2015.12.08-17.33.06:626][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/DayNightCycle" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2015.12.08-17.33.06:752][736]LogSavePackage: Save=118.316284ms
+[2015.12.08-17.33.06:752][736]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/DayNightCycle_Auto5E0EFE8F54BA19CA72E5535B2CBEAA173.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto5.uasset'
+[2015.12.08-17.33.06:764][736]LogFileHelpers: Auto-saving content packages took 0.184
+[2015.12.08-17.41.04:325][183]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-17.41.04:481][183]BlueprintEditorCompileResults: Info [4335.41] Compile of DayNightCycle successful! [in 155 ms]
+[2015.12.08-17.41.37:905][432]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-17.41.38:037][432]BlueprintEditorCompileResults: Info [4368.97] Compile of DayNightCycle successful! [in 131 ms]
+[2015.12.08-17.41.52:293][814]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/DayNightCycle" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/DayNightCycle.uasset" SILENT=true
+[2015.12.08-17.41.52:399][814]LogSavePackage: Save=88.897469ms
+[2015.12.08-17.41.52:399][814]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/DayNightCycle6C9DC4104EC7A897982F37A9059C3F42.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/DayNightCycle.uasset'
+[2015.12.08-17.43.07:600][158]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto6.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-17.43.08:157][158]LogSavePackage: Save=545.822021ms
+[2015.12.08-17.43.08:157][158]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto6DE78A12343FACEE9D44DDA88EF81D372.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto6.umap'
+[2015.12.08-17.43.08:166][158]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.651
+[2015.12.08-17.43.08:166][158]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.651
+[2015.12.08-17.52.28:897][672]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-17.52.29:050][672]BlueprintEditorCompileResults: Info [5019.59] Compile of DayNightCycle successful! [in 152 ms]
+[2015.12.08-17.53.09:658][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto7.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-17.53.10:277][ 70]LogSavePackage: Save=606.637024ms
+[2015.12.08-17.53.10:277][ 70]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto72EE96A964EF6165BF8B6AD8D89E478FA.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto7.umap'
+[2015.12.08-17.53.10:283][ 70]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.708
+[2015.12.08-17.53.10:283][ 70]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.708
+[2015.12.08-17.53.10:315][ 70]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Sky/DayNightCycle] ([1] browsable assets)...
+[2015.12.08-17.53.10:315][ 70]OBJ SavePackage: Finished generating thumbnails for package [/Game/Sky/DayNightCycle]
+[2015.12.08-17.53.10:322][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/DayNightCycle" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto7.uasset" SILENT=false AUTOSAVING=true
+[2015.12.08-17.53.10:537][ 70]LogSavePackage: Save=190.671707ms
+[2015.12.08-17.53.10:538][ 70]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/DayNightCycle_Auto70B9315484242F649432C90BD388F7CD0.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto7.uasset'
+[2015.12.08-17.53.10:546][ 70]LogFileHelpers: Auto-saving content packages took 0.263
+[2015.12.08-17.54.11:594][812]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-17.54.11:728][812]BlueprintEditorCompileResults: Info [5122.23] Compile of DayNightCycle successful! [in 133 ms]
+[2015.12.08-18.01.28:545][752]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-18.01.28:685][752]BlueprintEditorCompileResults: Info [5559.08] Compile of DayNightCycle successful! [in 139 ms]
+[2015.12.08-18.03.10:716][784]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto8.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2015.12.08-18.03.11:337][784]LogSavePackage: Save=605.516235ms
+[2015.12.08-18.03.11:337][784]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room_Auto88FC3ADE5412189350858EC9A7A317289.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Maps/Room_Auto8.umap'
+[2015.12.08-18.03.11:344][784]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Room' took 0.724
+[2015.12.08-18.03.11:344][784]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.724
+[2015.12.08-18.03.11:375][784]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Sky/DayNightCycle] ([1] browsable assets)...
+[2015.12.08-18.03.11:375][784]OBJ SavePackage: Finished generating thumbnails for package [/Game/Sky/DayNightCycle]
+[2015.12.08-18.03.11:377][784]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/DayNightCycle" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto8.uasset" SILENT=false AUTOSAVING=true
+[2015.12.08-18.03.11:578][784]LogSavePackage: Save=194.354294ms
+[2015.12.08-18.03.11:579][784]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/DayNightCycle_Auto8F53694C94475E0079754D1A7F006CD53.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Autosaves/Game/Sky/DayNightCycle_Auto8.uasset'
+[2015.12.08-18.03.11:589][784]LogFileHelpers: Auto-saving content packages took 0.245
+[2015.12.08-18.05.48:861][318]BlueprintLog: New page: Compile DayNightCycle
+[2015.12.08-18.05.49:025][318]BlueprintEditorCompileResults: Info [5819.40] Compile of DayNightCycle successful! [in 163 ms]
+[2015.12.08-18.05.51:150][499]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/DayNightCycle" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/DayNightCycle.uasset" SILENT=true
+[2015.12.08-18.05.51:281][499]LogSavePackage: Save=116.277924ms
+[2015.12.08-18.05.51:281][499]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/DayNightCycle96ECA82544467255AD592BB178DF62B9.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/DayNightCycle.uasset'
+[2015.12.08-18.05.53:703][679]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sky/BP_Sky_Sphere" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset" SILENT=true
+[2015.12.08-18.05.53:990][679]LogSavePackage: Save=269.963593ms
+[2015.12.08-18.05.53:991][679]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/BP_Sky_SphereC75230D44D787007CE0DDCABB9F4306C.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Sky/BP_Sky_Sphere.uasset'
+[2015.12.08-18.05.58:592][152]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room" FILE="../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2015.12.08-18.05.58:638][152]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001FB23920
+[2015.12.08-18.05.59:215][152]LogSavePackage: Save=558.777649ms
+[2015.12.08-18.05.59:215][152]LogSavePackage: Moving '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Saved/Room83E6802A41B9D6A4503CDAB71E7F4A4D.tmp' to '../../../../../../Users/339117/Desktop/BEDTIME/trunk/Content/Maps/Room.umap'
+[2015.12.08-18.06.01:941][446]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000372BC540
+[2015.12.08-18.06.02:533][447]Cmd: QUIT_EDITOR
+[2015.12.08-18.06.02:777][447]LogExit: Preparing to exit.
+[2015.12.08-18.06.03:730][447]LogExit: Editor shut down
+[2015.12.08-18.06.03:731][447]LogExit: Transaction tracking system shut down
+[2015.12.08-18.06.03:737][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000037625F80
+[2015.12.08-18.06.03:738][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000039813100
+[2015.12.08-18.06.03:738][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000399480E0
+[2015.12.08-18.06.03:738][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000040899300
+[2015.12.08-18.06.03:738][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000040898EA0
+[2015.12.08-18.06.03:738][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000037C9B9C0
+[2015.12.08-18.06.03:886][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000037C9B600
+[2015.12.08-18.06.03:886][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000052DFE7A0
+[2015.12.08-18.06.03:921][447]LogExit: Object subsystem successfully closed.
+[2015.12.08-18.06.03:966][447]LogModuleManager: Shutting down and abandoning module MaterialEditor (180)
+[2015.12.08-18.06.03:966][447]LogModuleManager: Shutting down and abandoning module TextureEditor (179)
+[2015.12.08-18.06.03:966][447]LogModuleManager: Shutting down and abandoning module CrashTracker (178)
+[2015.12.08-18.06.03:966][447]LogModuleManager: Shutting down and abandoning module SuperSearch (177)
+[2015.12.08-18.06.03:966][447]LogModuleManager: Shutting down and abandoning module SceneOutliner (176)
+[2015.12.08-18.06.03:966][447]LogModuleManager: Shutting down and abandoning module EditorWidgets (175)
+[2015.12.08-18.06.03:966][447]LogModuleManager: Shutting down and abandoning module CollectionManager (174)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module StatsViewer (173)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module FoliageEdit (172)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module LandscapeEditor (171)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module MeshPaint (170)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module ActorPickerMode (169)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module GeometryMode (168)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module TextureAlignMode (167)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module BspMode (166)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module PlacementMode (165)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module AutomationWorker (164)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module CharacterAI (163)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module SmartSnapping (162)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module ViewportSnapping (161)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module LogVisualizer (160)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (159)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module IntroTutorials (158)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (157)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module HardwareTargeting (156)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (155)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module UndoHistory (154)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (153)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module UserFeedback (152)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module XmlParser (151)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module Blutility (150)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (149)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (148)
+[2015.12.08-18.06.03:967][447]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (147)
+[2015.12.08-18.06.04:634][447]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (146)
+[2015.12.08-18.06.04:634][447]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (145)
+[2015.12.08-18.06.04:634][447]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (144)
+[2015.12.08-18.06.04:634][447]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (143)
+[2015.12.08-18.06.04:634][447]LogModuleManager: Shutting down and abandoning module InputBindingEditor (142)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (141)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module SettingsEditor (140)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module ProjectLauncher (139)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module SessionFrontend (138)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module ProfilerClient (137)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (136)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module DeviceManager (135)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module AutomationController (134)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module AutomationWindow (133)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module Layers (132)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (131)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module DetailCustomizations (130)
+[2015.12.08-18.06.04:635][447]LogModuleManager: Shutting down and abandoning module PackagesDialog (129)
+[2015.12.08-18.06.04:636][447]LogModuleManager: Shutting down and abandoning module AssetRegistry (128)
+[2015.12.08-18.06.04:763][447]LogModuleManager: Shutting down and abandoning module Persona (127)
+[2015.12.08-18.06.04:763][447]LogModuleManager: Shutting down and abandoning module SlateReflector (126)
+[2015.12.08-18.06.04:763][447]LogModuleManager: Shutting down and abandoning module LevelEditor (125)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module Kismet (124)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module GraphEditor (123)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module ClassViewer (122)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module Toolbox (121)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module ModuleUI (120)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module MovieSceneTools (119)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module OutputLog (118)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module GammaUI (117)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module Documentation (116)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (115)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (114)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module HTTP (113)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module AnalyticsET (112)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module Analytics (111)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module AITestSuite (110)
+[2015.12.08-18.06.04:765][447]LogModuleManager: Shutting down and abandoning module GameplayDebugger (109)
+[2015.12.08-18.06.04:766][447]LogModuleManager: Shutting down and abandoning module AIModule (108)
+[2015.12.08-18.06.04:766][447]LogModuleManager: Shutting down and abandoning module ProfilerService (107)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module TaskGraph (106)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module SlateRemote (105)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module ScriptEditorPlugin (104)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (103)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module CableComponent (102)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module MessagingDebugger (101)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (100)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (99)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module PluginsEditor (98)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module MainFrame (97)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module EpicSurvey (96)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module DesktopPlatform (95)
+[2015.12.08-18.06.04:980][447]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (94)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (92)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module UObjectPlugin (91)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (90)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (89)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module SourceControl (88)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module GitSourceControl (87)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module BlankPlugin (86)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (85)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module PaperJsonImporter (84)
+[2015.12.08-18.06.04:982][447]LogModuleManager: Shutting down and abandoning module ContentBrowser (83)
+[2015.12.08-18.06.04:983][447]LogModuleManager: Shutting down and abandoning module Paper2DEditor (82)
+[2015.12.08-18.06.04:983][447]LogModuleManager: Shutting down and abandoning module ObjectOutline (81)
+[2015.12.08-18.06.04:984][447]LogModuleManager: Shutting down and abandoning module ScriptPlugin (80)
+[2015.12.08-18.06.04:984][447]LogModuleManager: Shutting down and abandoning module UdpMessaging (79)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module Paper2D (78)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (77)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module Media (76)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module WmfMedia (75)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module PropertyEditor (73)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (72)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module FunctionalTesting (71)
+[2015.12.08-18.06.05:084][447]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (70)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (69)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module MessageLog (68)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module Sequencer (67)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module AssetTools (66)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module UMGEditor (65)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module UMG (64)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module Slate (63)
+[2015.12.08-18.06.05:085][447]LogModuleManager: Shutting down and abandoning module EditorStyle (62)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module SessionServices (61)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (60)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (59)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module XAudio2 (58)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module Networking (56)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module Core (55)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module KismetCompiler (54)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module PhysXFormats (53)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module MeshUtilities (52)
+[2015.12.08-18.06.05:094][447]LogModuleManager: Shutting down and abandoning module DerivedDataCache (51)
+[2015.12.08-18.06.05:146][447]LogDerivedDataCache: Shutdown
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (50)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (49)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (48)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (47)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (46)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (45)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (44)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module ImageWrapper (43)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (42)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (41)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (40)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (39)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (38)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (37)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (36)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (35)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module Messaging (34)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (33)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (32)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (31)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (30)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (29)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module Android_ES31TargetPlatform (28)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (27)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (26)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (25)
+[2015.12.08-18.06.05:146][447]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (24)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (23)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (22)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (21)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module TargetPlatform (20)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module InputCore (19)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module Settings (18)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (16)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module OculusRift (15)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (14)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module Landscape (11)
+[2015.12.08-18.06.05:147][447]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2015.12.08-18.06.05:154][447]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2015.12.08-18.06.05:155][447]LogExit: Exiting.
+[2015.12.08-18.06.05:196][447]Log file closed, 12/08/15 10:06:05
